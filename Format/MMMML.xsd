@@ -46,14 +46,14 @@
                  						</xs:element> <!-- end gender --> 	
 		           				</xs:sequence>
 	           				</xs:complexType>	
-           	</xs:element> <!-- end person -->
-	       	</xs:sequence>
-       		<xs:attribute ref="timestamp" use="required" />
-	    	</xs:complexType>
-      </xs:element> <!-- end author -->
-      <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-      <!-- xxx                        LEXIC                              xxx -->
-      <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+           				</xs:element> <!-- end person -->
+	       			</xs:sequence>
+       				<xs:attribute ref="timestamp" use="required" />
+	    		</xs:complexType>
+      		</xs:element> <!-- end author -->
+      		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+      		<!-- xxx                        LEXIC                              xxx -->
+      		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
       <xs:element name="lexic" minOccurs ="0" maxOccurs="1">
 	   		<xs:complexType>
 		   		<xs:sequence>
