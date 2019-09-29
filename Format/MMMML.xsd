@@ -17,20 +17,20 @@
 		<!-- xxx                        MAIN CONTENT                       xxx -->
 		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 		<xs:element name="main_content" type="xs:string"/>
-    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-    <!-- xxx                        ROLE                               xxx -->
-    <!-- xxx                   question, answer, ...                   xxx -->
-    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-    <xs:element name="role" type="xs:string"/>
-      <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-      <!-- xxx                        AUTHOR                             xxx -->
-      <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-      <xs:element name="author" minOccurs ="0" maxOccurs="unbounded" >
-	     	<xs:complexType>
-		     	<xs:sequence>
-			     	<xs:element name="person">
-	           	<xs:complexType>
-		           	<xs:sequence>		
+		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		<!-- xxx                        ROLE                               xxx -->
+		<!-- xxx                   question, answer, ...                   xxx -->
+		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		<xs:element name="role" type="xs:string"/>
+		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		<!-- xxx                        AUTHOR                             xxx -->
+		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		<xs:element name="author" minOccurs ="0" maxOccurs="unbounded" >
+	     		<xs:complexType>
+		     		<xs:sequence>
+			     		<xs:element name="person">
+	           				<xs:complexType>
+		           				<xs:sequence>		
 			          	<xs:element name="firstname" type="xs:string"/>  	
 			           	<xs:element name="lastname"  type="xs:string"/> <!-- how to us: <lastname>Refsnes</lastname>-->
 			           	<xs:element name="birthdate" type="xs:date"/>
