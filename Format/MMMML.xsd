@@ -31,21 +31,21 @@
 			     		<xs:element name="person">
 	           				<xs:complexType>
 		           				<xs:sequence>		
-			          	<xs:element name="firstname" type="xs:string"/>  	
-			           	<xs:element name="lastname"  type="xs:string"/> <!-- how to us: <lastname>Refsnes</lastname>-->
-			           	<xs:element name="birthdate" type="xs:date"/>
-			           	<xs:element name="nationality" type="xs:string" default="French" minOccurs ="0"/> <!-- add attributes nickname and avatar -->		
-			           	<xs:element name="gender" default="Other" minOccurs ="0">
-	                 	<xs:simpleType>
-		                 	<xs:restriction base="xs:string">
-			                 	<xs:enumeration value="Female"/>
-			                 	<xs:enumeration value="Male"/>
-			                 	<xs:enumeration value="Other"/>
-		                 	</xs:restriction>
-	                 	</xs:simpleType>
-                 	</xs:element> <!-- end gender --> 	
-		           	</xs:sequence>
-	           	</xs:complexType>	
+			          				<xs:element name="firstname" type="xs:string"/>  	
+			           				<xs:element name="lastname"  type="xs:string"/> <!-- how to us: <lastname>Refsnes</lastname>-->
+			           				<xs:element name="birthdate" type="xs:date"/>
+			           				<xs:element name="nationality" type="xs:string" default="French" minOccurs ="0"/> <!-- add attributes nickname and avatar -->		
+			           				<xs:element name="gender" default="Other" minOccurs ="0">
+	                 						<xs:simpleType>
+		                 						<xs:restriction base="xs:string">
+			                 						<xs:enumeration value="Female"/>
+			                 						<xs:enumeration value="Male"/>
+			                 						<xs:enumeration value="Other"/>
+		                 						</xs:restriction>
+	                 						</xs:simpleType>
+                 						</xs:element> <!-- end gender --> 	
+		           				</xs:sequence>
+	           				</xs:complexType>	
            	</xs:element> <!-- end person -->
 	       	</xs:sequence>
        		<xs:attribute ref="timestamp" use="required" />
