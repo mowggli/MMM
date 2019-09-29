@@ -12,75 +12,75 @@
 
 	<xs:element name="unit" type="unit_type"/>
 	<xs:complexType name="unit_type">
-	<xs:sequence>
-		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-		<!-- xxx                        MAIN CONTENT                       xxx -->
-		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-		<xs:element name="main_content" type="xs:string"/>
-		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-		<!-- xxx                        ROLE                               xxx -->
-		<!-- xxx                   question, answer, ...                   xxx -->
-		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-		<xs:element name="role" type="xs:string"/>
-		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-		<!-- xxx                        AUTHOR                             xxx -->
-		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-		<xs:element name="author" minOccurs ="0" maxOccurs="unbounded" >
-	     		<xs:complexType>
-		     		<xs:sequence>
-			     		<xs:element name="person">
-	           				<xs:complexType>
-		           				<xs:sequence>		
-			          				<xs:element name="firstname" type="xs:string"/>  	
-			           				<xs:element name="lastname"  type="xs:string"/> <!-- how to us: <lastname>Refsnes</lastname>-->
-			           				<xs:element name="birthdate" type="xs:date"/>
-			           				<xs:element name="nationality" type="xs:string" default="French" minOccurs ="0"/> <!-- add attributes nickname and avatar -->		
-			           				<xs:element name="gender" default="Other" minOccurs ="0">
-	                 						<xs:simpleType>
-		                 						<xs:restriction base="xs:string">
-			                 						<xs:enumeration value="Female"/>
-			                 						<xs:enumeration value="Male"/>
-			                 						<xs:enumeration value="Other"/>
-		                 						</xs:restriction>
-	                 						</xs:simpleType>
-                 						</xs:element> <!-- end gender --> 	
-		           				</xs:sequence>
-	           				</xs:complexType>	
-           				</xs:element> <!-- end person -->
-	       			</xs:sequence>
-       				<xs:attribute ref="timestamp" use="required" />
-	    		</xs:complexType>
-      		</xs:element> <!-- end author -->
-      		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-      		<!-- xxx                        LEXIC                              xxx -->
-      		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-      <xs:element name="lexic" minOccurs ="0" maxOccurs="1">
-	   		<xs:complexType>
-		   		<xs:sequence>
-	  	   		<xs:element name="entry" minOccurs ="0" maxOccurs="unbounded">
+		<xs:sequence>
+			<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+			<!-- xxx                        MAIN CONTENT                       xxx -->
+			<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+			<xs:element name="main_content" type="xs:string"/>
+			<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+			<!-- xxx                        ROLE                               xxx -->
+			<!-- xxx                   question, answer, ...                   xxx -->
+			<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+			<xs:element name="role" type="xs:string"/>
+			<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+			<!-- xxx                        AUTHOR                             xxx -->
+			<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+			<xs:element name="author" minOccurs ="0" maxOccurs="unbounded" >
+		     		<xs:complexType>
+			     		<xs:sequence>
+				     		<xs:element name="person">
+		           				<xs:complexType>
+			           				<xs:sequence>		
+				          				<xs:element name="firstname" type="xs:string"/>  	
+				           				<xs:element name="lastname"  type="xs:string"/> <!-- how to us: <lastname>Refsnes</lastname>-->
+			        	   				<xs:element name="birthdate" type="xs:date"/>
+			           					<xs:element name="nationality" type="xs:string" default="French" minOccurs ="0"/> <!-- add attributes nickname and avatar -->		
+			           					<xs:element name="gender" default="Other" minOccurs ="0">
+	                 							<xs:simpleType>
+		                 							<xs:restriction base="xs:string">
+			                 							<xs:enumeration value="Female"/>
+			                 							<xs:enumeration value="Male"/>
+			                 							<xs:enumeration value="Other"/>
+			                 						</xs:restriction>
+	        	         						</xs:simpleType>
+                 							</xs:element> <!-- end gender --> 	
+		           					</xs:sequence>
+	           					</xs:complexType>	
+           					</xs:element> <!-- end person -->
+		       			</xs:sequence>
+       					<xs:attribute ref="timestamp" use="required" />
+	    			</xs:complexType>
+      			</xs:element> <!-- end author -->
+      			<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+      			<!-- xxx                        LEXIC                              xxx -->
+      			<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+      			<xs:element name="lexic" minOccurs ="0" maxOccurs="1">
+	   			<xs:complexType>
+		   			<xs:sequence>
+	  	   				<xs:element name="entry" minOccurs ="0" maxOccurs="unbounded">
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element name="term" type="xs:string"/> 		<!-- a term may have authors, translations/equivalences, properties, instanciations, generalisations, and definitions -->
 									<xs:element name="definition" type="xs:string"/> <!-- a definition may have authors, translations --> <!-- a translation has details --> <!-- everything as an id -->
 								</xs:sequence>
-			  			</xs:complexType>
+			  				</xs:complexType>
 						</xs:element> <!-- end entry -->
-	   			</xs:sequence>
+	   				</xs:sequence>
 	 			</xs:complexType>
 			</xs:element> <!-- end lexic -->
-      <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-      <!-- xxx                        CONTEXT                            xxx -->
-      <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-      <xs:element name="context" minOccurs ="0" maxOccurs="1">
-		   	<xs:complexType>
-			   	<xs:sequence>
-			    	<xs:element name="thedetails" type="xs:string" minOccurs ="0" maxOccurs="unbounded"/>
-			    	<xs:element name="details" type="unit_type" minOccurs ="0" maxOccurs="unbounded"/>
-			   	</xs:sequence>
-         	<xs:attribute ref="parentid" use="required" />
-		   	</xs:complexType>
-	    </xs:element> <!-- end context -->
-    </xs:sequence>
-    <xs:attribute ref="id" use="required" />
-  </xs:complexType>
+      			<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+      			<!-- xxx                        CONTEXT                            xxx -->
+      			<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+      			<xs:element name="context" minOccurs ="0" maxOccurs="1">
+		   		<xs:complexType>
+				   	<xs:sequence>
+					    	<xs:element name="thedetails" type="xs:string" minOccurs ="0" maxOccurs="unbounded"/>
+					    	<xs:element name="details" type="unit_type" minOccurs ="0" maxOccurs="unbounded"/>
+				   	</xs:sequence>
+         				<xs:attribute ref="parentid" use="required" />
+		   		</xs:complexType>
+	    		</xs:element> <!-- end context -->
+    		</xs:sequence>
+    		<xs:attribute ref="id" use="required" />
+  	</xs:complexType>
 </xs:schema>
