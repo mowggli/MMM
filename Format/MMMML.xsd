@@ -12,7 +12,7 @@
 
 	<xs:element name="unit" type="unit_type"/>
 	<xs:complexType name="unit_type">
-		<xs:sequence>
+	<xs:sequence>
 			<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
       <!-- xxx                        MAIN CONTENT                       xxx -->
       <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
