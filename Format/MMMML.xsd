@@ -14,9 +14,9 @@
 	<xs:complexType name="unit_type">
 	<xs:sequence>
 		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-    <!-- xxx                        MAIN CONTENT                       xxx -->
-    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-    <xs:element name="main_content" type="xs:string"/>
+		<!-- xxx                        MAIN CONTENT                       xxx -->
+		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		<xs:element name="main_content" type="xs:string"/>
     <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
     <!-- xxx                        ROLE                               xxx -->
     <!-- xxx                   question, answer, ...                   xxx -->
