@@ -5,5 +5,5 @@ Before that Mathilde wrote other presentation papers.
 * [MMM Ivy and Mathilde sessions -abstraction shift](https://www.overleaf.com/read/tnhkgdqbhqyc)
 * [Telmo's paper](https://www.overleaf.com/read/gypfkkgvcrmt)
 * [Mechanique](https://www.overleaf.com/read/stzzwzbygkcz)
-* [Link](http://a.com)
+* [Beginning of Ivy sessions](https://www.overleaf.com/read/cyrbwyvnqhmv)
 * [Link](http://a.com)
