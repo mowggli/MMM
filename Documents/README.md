@@ -6,4 +6,4 @@ Before that Mathilde wrote other presentation papers.
 * [Telmo's paper](https://www.overleaf.com/read/gypfkkgvcrmt)
 * [Mechanique](https://www.overleaf.com/read/stzzwzbygkcz)
 * [Beginning of Ivy sessions](https://www.overleaf.com/read/cyrbwyvnqhmv)
-* [Link](http://a.com)
+* [Explorer's map for Innobride](https://www.overleaf.com/read/whjxgxggqdwn)
