@@ -36,8 +36,6 @@ In **mmm.c**:
 	    ...  in process --> type 'P',
 	    ...    finished --> type 'F'
 ```
-If choice = `P` then ...
-
 ---
 
 If choice = `F` then 
@@ -53,5 +51,5 @@ If choice = `R` then `registerStudy()` (from **interface.c**).
 
 ---
 
-If choice = `S` again then ...
+If choice = `S` again or `P then ...
 
