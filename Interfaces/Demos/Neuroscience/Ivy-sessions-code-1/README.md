@@ -17,15 +17,18 @@ In **mmm.c**:
 
 ---
 
-If choice = `S` then `readQUESTION` then `fprintForestQUESTION` (from **forest.c**) a MMM question unit on screen then possibility to `createFiles` (from **addendum.c**).
+## I. If choice = `S` ...
+... then `readQUESTION` then `fprintForestQUESTION` (from **forest.c**) a MMM question unit on screen then possibility to `createFiles` (from **addendum.c**).
 
 ----
 
-If choice = `M` then same as previous case, but this time with two MMM question units and in the middle a call to `mergeQuestions` (from **interface.c**).
+## II. If choice = `M` ...
+... then same as previous case, but this time with two MMM question units and in the middle a call to `mergeQuestions` (from **interface.c**).
 
 ----
 
-If choice = `S` then `neuroscience_mmm` (from **interface.c**)
+## III. If choice = `S` ...
+...then `neuroscience_mmm` (from **interface.c**)
 
 ```
 (0a) Do you want to register a study that is...
@@ -37,7 +40,16 @@ If choice = `P` then ...
 
 ---
 
-If choice = `F` then ...
+If choice = `F` then 
+```
+(0b) If you want to...
+	Update and close an pre-registered study...	--> Type 'P'
+	Register and close an un-registered study...	--> Type 'R
+```
+
+If choice = `P` then `readQUESTION` then `closeStudy` (from **interface.c**).
+
+If choice = `R` then `registerStudy()` (from **interface.c**).
 
 ---
 
