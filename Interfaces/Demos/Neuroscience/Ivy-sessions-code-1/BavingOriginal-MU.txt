@@ -1,0 +1,168 @@
+<Statement>
+   <text>Is it true that ' Transcranial slow oscillation current stimulation improve sleep-dependent memory consolidation in children with ADHD. '?</text>
+   <tag>Question</tag>
+   <Context>
+      <Entry>
+         <term>Slow oscillation</term>
+         <definition>Synchronized EEG activity with frequency range of 0.5-2Hz</definition>
+      </Entry>
+      <Entry>
+         <term>ADHD</term>
+         <definition>Attention deficit hyperactivity disorder</definition>
+      </Entry>
+      <Entry>
+         <term>Memory consolidation</term>
+         <definition>a category of processes that stabilize a memory trace after its initial acquisition</definition>
+      </Entry>
+      <Entry>
+         <term>Improve</term>
+         <definition>??</definition>
+      </Entry>
+   </Context>
+   <Answers>
+   <Statement>
+      <text>Yes.</text>
+      <tag>Answer</tag>
+      <Context>
+         <Statement>
+            <text>Memory benefits particularly from slow wave sleep (SWS) which is characterized electrophysiologically by slow143oscillations (around 0.8 Hz) occurring during slow wave activity (0.5–5 Hz).</text>
+            <tag>UPSTREAM</tag>
+            <Context>
+               <Entry>
+                  <term>Slow wave</term>
+                  <definition>??</definition>
+               </Entry>
+               <Entry>
+                  <term>Electrophysiologically</term>
+                  <definition>??</definition>
+               </Entry>
+            </Context>
+         </Statement>
+         <Statement>
+            <text>Transcranial oscillating direct current stimulation at 0.75 Hz during SWS in young healthy adults increased SO power,151resulting in boosted sleep-dependent consolidation of declarative memory.</text>
+            <tag>UPSTREAM</tag>
+            <Context>
+               <Entry>
+                  <term>Direct</term>
+                  <definition>??</definition>
+               </Entry>
+               <Statement>
+                  <text>Published in [S2006@LMarshall].</text>
+                  <tag>BIB</tag>
+               </Statement>
+            </Context>
+         </Statement>
+         <Statement>
+            <text>Children with ADHD display altered slow EEG-activity during slow wave sleep and show deficits in the sleep associated consolidation of declarative memory.</text>
+            <tag>UPSTREAM</tag>
+            <Context>
+               <Entry>
+                  <term>Altered</term>
+                  <definition>??</definition>
+               </Entry>
+               <Entry>
+                  <term>Deficits</term>
+                  <definition>??</definition>
+               </Entry>
+               <Statement>
+                  <text>Published in \cite{prehn2011reduced}.</text>
+                  <tag>BIB</tag>
+               </Statement>
+            </Context>
+         </Statement>
+         <Statement>
+            <text>We showed that increasing slow oscillation power during sleep by toDCS can alleviate declarative memory deficits in children with ADHD.</text>
+            <tag>MAIN</tag>
+            <Context>
+               <Entry>
+                  <term>Alleviate</term>
+                  <definition>??</definition>
+               </Entry>
+               <Statement>
+                  <text>Published in Brain Stimul. 2014 Nov-Dec;7(6):793-9. doi: 10.1016/j.brs.2014.07.036. Epub 2014 Jul 23..</text>
+                  <tag>BIB</tag>
+               </Statement>
+               <Statement>
+                  <text>This statement (refPA) has not yet been proven. It is currently being studied by  Prehn-Kristensen A, Munz M, Göder R, Wilhelm I, Korr K, Vahl W, Wiesner CD, Baving L..</text>
+                  <tag>ACTU</tag>
+                  <Context>
+               <Statement>
+                  <text>12 children with ADHD underwent a toDCS and a sham condition in a double-blind crossover study design conducted in a sleep laboratory. Memory was tested using a 2D object-location task. In addition, 12 healthy children performed the same memory task in their home environment, with no stimulation.</text>
+                  <tag>EXPMT</tag>
+                  <Context>
+                     <Entry>
+                        <term>2D object-location task</term>
+                        <definition>Computer card game 'Memory' created with E-Prime 2.1 by Psychology Software Tools</definition>
+                     </Entry>
+                     <Entry>
+                        <term>toDCS</term>
+                        <definition>Transcranial oscillating direct current stimulation, following protocol [MethodtoDCS@S2006@LMarshall]</definition>
+                     </Entry>
+                     <Statement>
+                        <text>Differences between healthy children and children with ADHD in memory performance might have been underestimated as the controls performed the tasks and slept at home, not comparable to the settings for children with ADHD. But this issue has been addressed.</text>
+                        <tag>T1-CNFDR</tag>
+                        <Context>
+                           <Statement>
+                              <text>To ensure that the home and laboratory conditions were comparable, parents of control children were instructed to provide a quiet room and to take care that no disturbing events happened during the sessions. Moreover, by introducing a learning criterion (60 per cent), we made sure that patients and healthy children ended the encoding session on a comparable level of encoding.</text>
+                              <tag>EXPMT</tag>
+                              <Context>
+                                 <Entry>
+                                    <term>Level of encoding</term>
+                                    <definition>??</definition>
+                                 </Entry>
+                                 <Entry>
+                                    <term>Learning criterion</term>
+                                    <definition>??</definition>
+                                 </Entry>
+                                 <Entry>
+                                    <term>60%</term>
+                                    <definition>??</definition>
+                                 </Entry>
+                                 <Entry>
+                                    <term>Disturbing</term>
+                                    <definition>??</definition>
+                                 </Entry>
+                              </Context>
+                           </Statement>
+                        </Context>
+                     </Statement>
+                     <Statement>
+                        <text>Some unforseen thing could go wrong. But this is assumed not to happen.</text>
+                        <tag>T2-CNFDR</tag>
+                     </Statement>
+                     <Statement>
+                        <text>1.Unstimulated children with ADHD displayed worse sleep-dependent memory consolidation than healthy controls. 2.After stimulation, the sleep-dependent memory performance did not differ between children with ADHD and healthy controls. 3.Stimulation did not increase the SO power during the post-stimulation intervals, except in sleep stage 4 epoch. 4 Stimulation did not affect the performance on any control variable (mood, alertness, or working memory performance). Also link to data source.</text>
+                        <tag>DATA</tag>
+                     </Statement>
+                  </Context>
+               </Statement>
+                  </Context>
+               </Statement>
+            </Context>
+         </Statement>
+      </Context>
+   </Statement>
+   <Statement>
+      <text>No.</text>
+      <tag>Answer</tag>
+      <Context>
+         <Statement>
+            <text>SO tDCS applied to healthy elderly failed to show an effect on memory consolidation.</text>
+            <tag>UPSTREAM</tag>
+            <Context>
+               <Statement>
+                  <text>Published in \cite{eggert2013no}.</text>
+                  <tag>BIB</tag>
+               </Statement>
+            </Context>
+         </Statement>
+      </Context>
+   </Statement>
+   <Statement>
+      <text>The question doesn't make sense or is irrelevant.</text>
+      <tag>Answer</tag>
+      <Context>
+      </Context>
+   </Statement>
+   </Answers>
+</Statement>

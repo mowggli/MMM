@@ -1,0 +1,206 @@
+<Statement>
+   <text>Is it true that ' Blip is blop. '?</text>
+   <tag>Question</tag>
+   <Context>
+      <Entry>
+         <term>a</term>
+         <definition>b</definition>
+      </Entry>
+      <Entry>
+         <term>c</term>
+         <definition>d</definition>
+      </Entry>
+      <Entry>
+         <term>e</term>
+         <definition>f</definition>
+      </Entry>
+      <Entry>
+         <term>g</term>
+         <definition>h</definition>
+      </Entry>
+   </Context>
+   <Answers>
+   <Statement>
+      <text>Yes.</text>
+      <tag>Answer</tag>
+      <Context>
+ 			<Entry>
+             <term>Blip</term>
+              <definition>??</definition>
+         </Entry>
+         <Statement>
+            <text>Alice's first reason for.</text>
+            <tag>UPSTREAM</tag>
+            <Context>
+               <Entry>
+                  <term>c</term>
+                  <definition>d</definition>
+               </Entry>
+               <Entry>
+                  <term>e</term>
+                  <definition>??</definition>
+               </Entry>
+               <Statement>
+                  <text>Published in paper.</text>
+                  <tag>BIB</tag>
+               </Statement>
+            </Context>
+         </Statement>
+         <Statement>
+            <text>Alice's second Reason for.</text>
+            <tag>UPSTREAM</tag>
+            <Context>
+               <Entry>
+                  <term>f</term>
+                  <definition>g</definition>
+               </Entry>
+               <Statement>
+                  <text>Published in paper.</text>
+                  <tag>BIB</tag>
+               </Statement>
+            </Context>
+         </Statement>
+         <Statement>
+            <text>Flip is flop.</text>
+            <tag>MAIN</tag>
+            <Context>
+               <Entry>
+                  <term>h</term>
+                  <definition>i</definition>
+               </Entry>
+               <Entry>
+                  <term>j</term>
+                  <definition>??</definition>
+               </Entry>
+               <Statement>
+                  <text>No publication referenced.</text>
+                  <tag>NO BIB</tag>
+               </Statement>
+               <Statement>
+                  <text>This statement (refPA) has not yet been proven. It is currently being studied by Mathilde.</text>
+                  <tag>ACTU</tag>
+                  <Context>
+               <Statement>
+                  <text>Experiment description.</text>
+                  <tag>EXPMT</tag>
+                  <Context>
+                     <Entry>
+                        <term>k</term>
+                        <definition>l</definition>
+                     </Entry>
+                     <Statement>
+                        <text>It could fly off. But this issue has been addressed.</text>
+                        <tag>T1-CNFDR</tag>
+                        <Context>
+                           <Statement>
+                              <text>Sub Experiment description.</text>
+                              <tag>EXPMT</tag>
+                              <Context>
+                                 <Entry>
+                                    <term>m</term>
+                                    <definition>n</definition>
+                                 </Entry>
+                              </Context>
+                           </Statement>
+                        </Context>
+                     </Statement>
+                     <Statement>
+                        <text>It could blow up. But this is assumed not to happen.</text>
+                        <tag>T2-CNFDR</tag>
+                     </Statement>
+                     <Statement>
+                        <text>It could disappear. But this issue has been addressed.</text>
+                        <tag>T1-CNFDR</tag>
+                        <Context>
+                           <Statement>
+                              <text>Missing experiment description.</text>
+                              <tag>EXPMT</tag>
+                           </Statement>
+                        </Context>
+                     </Statement>
+                     <Statement>
+                        <text>Some unforseen thing could go wrong. But this is assumed not to happen.</text>
+                        <tag>T2-CNFDR</tag>
+                     </Statement>
+							<Statement>
+                        <text>We acknowledge there is this limitation to our study: bla bla.</text>
+                        <tag>T3-CNFDR</tag>
+                     </Statement>
+                     <Statement>
+                        <text>Some data.</text>
+                        <tag>DATA</tag>
+                     </Statement>
+                  </Context>
+               </Statement>
+                  </Context>
+               </Statement>
+            </Context>
+         </Statement>
+      </Context>
+   </Statement>
+   <Statement>
+      <text>No.</text>
+      <tag>Answer</tag>
+      <Context>
+         <Statement>
+            <text>Alice's first Reason against.</text>
+            <tag>UPSTREAM</tag>
+            <Context>
+               <Entry>
+                  <term>o</term>
+                  <definition>p</definition>
+               </Entry>
+               <Entry>
+                  <term>q</term>
+                  <definition>??</definition>
+               </Entry>
+               <Statement>
+                  <text>Published in paper.</text>
+                  <tag>BIB</tag>
+               </Statement>
+            </Context>
+         </Statement>
+         <Statement>
+            <text>Alice's second Reason against.</text>
+            <tag>UPSTREAM</tag>
+            <Context>
+               <Statement>
+                  <text>Published in paper.</text>
+                  <tag>BIB</tag>
+               </Statement>
+            </Context>
+         </Statement>
+      </Context>
+   </Statement>
+   <Statement>
+      <text>The question doesn't make sense or is irrelevant.</text>
+      <tag>Answer</tag>
+      <Context>
+         <Statement>
+            <text>Alice's first Absurd.</text>
+            <tag>UPSTREAM</tag>
+            <Context>
+               <Entry>
+                  <term>r</term>
+                  <definition>s</definition>
+               </Entry>
+               <Statement>
+                  <text>Published in paper..</text>
+                  <tag>BIB</tag>
+               </Statement>
+            </Context>
+         </Statement>
+         <Statement>
+            <text>Alice's second Absurd.</text>
+            <tag>UPSTREAM</tag>
+            <Context>
+               <Statement>
+                  <text>Published in paper.</text>
+                  <tag>BIB</tag>
+               </Statement>
+            </Context>
+         </Statement>
+      </Context>
+   </Statement>
+   </Answers>
+</Statement>

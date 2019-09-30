@@ -1,0 +1,183 @@
+<Question>
+<text>Is it true that ' Transcranial slow oscillation current stimulation improve sleep-dependent memory consolidation in children with ADHD. ' ?</text>
+   <Context>
+         <Entry>
+         <term>Transcranial</term>
+         <definition>??</definition>
+         </Entry>
+			<Entry>
+         <term>Current stimulation</term>
+         <definition>??</definition>
+         </Entry>
+         <Entry>
+         <term>improve </term>
+         <definition>??</definition>
+         </Entry>
+         <Entry>
+         <term>sleep dependent memory consolidation</term>
+         <definition>??</definition>
+         </Entry>
+			<Entry>
+         <term>Slow oscillation</term>
+         <definition>Synchronized EEG activity with frequency range of 0.5-2Hz</definition>
+         </Entry>
+         <Entry>
+         <term>Memory consolidation</term>
+         <definition>A category of processes that stabilize a memory trace after its initial acquisition.</definition>
+         </Entry>
+         <Entry>
+         <term>ADHD</term>
+         <definition>Attention deficit hyperactivity disorder.</definition>
+         </Entry>
+   </Context>
+   <Answers>
+      <Answer>
+      <text>Yes.</text>
+         <Context>
+               <Statement>
+               <text>Memory benefits particularly from slow wave sleep (SWS) which is characterized electrophysiologically by slow oscillations occurring during slow wave activity of 0.5 to 5Hz.	#FLAG:UPSTREAM#</text>
+                  <Context>
+                        <Entry>
+                        <term>Slow wave sleep</term>
+                        <definition>??</definition>
+                        </Entry>
+                        <Entry>
+                        <term>electrophysiologically</term>
+                        <definition>??</definition>
+                        </Entry>
+                        <Entry>
+                        <term>slow wave activity</term>
+                        <definition>??</definition>
+                        </Entry>
+                  </Context>
+               </Statement>
+               <Statement>
+               <text>TO direct current stimulation at 0.75 Hz during SWS in young healthy adults increased SO power, resulting in boosted sleep-depednet consolidation of declarative memory.	#FLAG:UPSTREAM#</text>
+                  <Context>
+                        <Entry>
+                        <term>Young healthy adult</term>
+                        <definition>??</definition>
+                        </Entry>
+                        <Entry>
+                        <term>SO power</term>
+                        <definition>??</definition>
+                        </Entry>
+                        <Entry>
+                        <term>boosted</term>
+                        <definition>??</definition>
+                        </Entry>
+                        <Entry>
+                        <term>declarative memory</term>
+                        <definition>??</definition>
+                        </Entry>
+                        <Statement>
+                        <text>Published in S2006@LMarshall	#FLAG:BIB#</text>
+                        </Statement>
+                  </Context>
+               </Statement>
+               <Statement>
+               <text>Children with ADHD display altered slow EEG-activity during slow wave sleep and show deficits in the sleep associated consolidation of declarative memory.	#FLAG:UPSTREAM#</text>
+                  <Context>
+                        <Entry>
+                        <term>Altered</term>
+                        <definition>??</definition>
+                        </Entry>
+                        <Entry>
+                        <term>EEG activity</term>
+                        <definition>??</definition>
+                        </Entry>
+                        <Entry>
+                        <term>Deficits</term>
+                        <definition>??</definition>
+                        </Entry>
+                        <Statement>
+                        <text>Published in Reduced sleep-associated consolidation of declarative memory in attention-deficit/hyperactivity disorder.Sleep medicine, 2011.	#FLAG:BIB#</text>
+                        </Statement>
+                  </Context>
+               </Statement>
+               <Statement>
+               <text>Efforts are being made to prove that Increasing SO power during sleep by toDCS can alleviate declarative memory deficits in children with ADHD. An experiment is currently being carried out by Prehn-Kristensen et al.</text>
+                  <Context>
+                        <Entry>
+                        <term>Alleviate</term>
+                        <definition>??</definition>
+                        </Entry>
+                        <Statement>
+                        <text>Published in Transcranial  oscillatory  direct  current  stimulation  during  sleep  improves  declarative  memory  consolidation  in children with attention-deficit/hyperactivity disorder to a level</text>
+                        </Statement>
+               <Statement>
+               <text>12 children with ADHD underwent a toDCS and a sham condition in a double-blind crossover study design conducted in a sleep laboratory...	#FLAG:EXPERIMENT#</text>
+                  <Context>
+                        <Entry>
+                        <term>2D object-location task</term>
+                        <definition>Computer card game, Memory, created with E-Prime 2.1 by Psychology Software Tools</definition>
+                        </Entry>
+                        <Entry>
+                        <term>toDCS</term>
+                        <definition>Transcranial oscillating direct current stimulation, following protocol of S2006@Marshall</definition>
+                        </Entry>                  
+						       <Entry>
+                        <term>Double blind crossover study</term>
+                        <definition>??</definition>
+                        </Entry>
+                        <Entry>
+                        <term>Sleep laboratory</term>
+                        <definition>??</definition>
+                        </Entry>
+                        <Entry>
+                        <term>No stimmulation</term>
+                        <definition>??</definition>
+                        </Entry>
+                        <Statement>
+                        <text>Differences btw healthy/ADHD children in memory performance might have been underestimated ...	#FLAG:CFD T1#</text>
+                           <Context>
+                                 <Statement>
+                                 <text>To ensure that the home and laboratory conditions were comparable, parents of control children were instructed ...	#FLAG:EXPERIMENT#</text>
+                                    <Context>
+                                          <Entry>
+                                          <term>Quiet room</term>
+                                          <definition>??</definition>
+                                          </Entry>
+                                    </Context>
+                                 </Statement>
+                           </Context>
+                        </Statement>
+                        <Statement>
+                        <text>Something else. But this is assumed not to happen.	#FLAG:CFD T2#</text>
+                        </Statement>
+                        <Statement>
+                        <text>Some unforseen thing could go wrong. But this is assumed not to happen.	#FLAG:CFD T2#</text>
+                        </Statement>
+                        <Statement>
+                        <text>No data yet.	#FLAG:DATA#</text>
+                        </Statement>
+                  </Context>
+               </Statement>
+                  </Context>
+               </Statement>
+         </Context>
+      </Answer>
+      <Answer>
+      <text>No.</text>
+         <Context>
+               <Statement>
+               <text>SO tDCS applied to healthy elderly failed to show an effect on memory consolidation.	#FLAG:UPSTREAM#</text>
+                  <Context>
+                        <Entry>
+                        <term>healthy ederly</term>
+                        <definition>??</definition>
+                        </Entry>
+                        <Statement>
+                        <text>Published in No effects of slow oscillatory transcranial direct current stimulation (tdcs) on sleep-dependent memory consolidation in healthy elderly subjects. Brain stimulation. 2014	#FLAG:BIB#</text>
+                        </Statement>
+                  </Context>
+               </Statement>
+         </Context>
+      </Answer>
+      <Answer>
+      <text>The question doesn't make sense or is irrelevant.</text>
+         <Context>
+         </Context>
+      </Answer>
+   </Answers>
+</Question>

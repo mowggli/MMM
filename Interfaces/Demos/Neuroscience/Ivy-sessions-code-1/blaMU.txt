@@ -1,0 +1,48 @@
+<Statement>
+   <text>Is it true that ' bla ' ?</text>
+   <tag>Question</tag>
+   <Context>
+   </Context>
+   <Answers>
+   <Statement>
+      <text>Yes.</text>
+      <tag>Answer</tag>
+      <Context>
+         <Statement>
+            <text>Some unspecified argument in favour of the answer being ' Yes. '.</text>
+            <tag>US MAIN</tag>
+            <Context>
+               <Statement>
+                  <text>This statement ('Some unspecified argument in favour of the answer being ' Yes. '.') has not yet been proven. It is currently being studied.</text>
+                  <tag>ACTU</tag>
+                  <Context>
+               <Statement>
+                  <text>Missing experiment description.</text>
+                  <tag>EXPMT</tag>
+                  <Context>
+                     <Statement>
+                        <text>Some unforseen thing could go wrong. But this is assumed not to happen.</text>
+                        <tag>T2-CNFDR</tag>
+                     </Statement>
+                  </Context>
+               </Statement>
+                  </Context>
+               </Statement>
+            </Context>
+         </Statement>
+      </Context>
+   </Statement>
+   <Statement>
+      <text>No.</text>
+      <tag>Answer</tag>
+      <Context>
+      </Context>
+   </Statement>
+   <Statement>
+      <text>The question doesn't make sense or is irrelevant.</text>
+      <tag>Answer</tag>
+      <Context>
+      </Context>
+   </Statement>
+   </Answers>
+</Statement>

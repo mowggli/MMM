@@ -1,0 +1,155 @@
+<Question>
+<text>Is this true?</text>
+   <Context>
+         <Entry>
+         <term>blip</term>
+         <definition>blop</definition>
+         </Entry>
+         <Entry>
+         <term>flip</term>
+         <definition>flop</definition>
+         </Entry>
+   </Context>
+   <Answers>
+      <Answer>
+      <text>Yes.</text>
+         <Context>
+               <Statement>
+               <text>One reason</text>
+               </Statement>
+               <Statement>
+               <text>A second reason.</text>
+                  <Context>
+                        <Entry>
+                        <term>efforts</term>
+                        <definition></definition>
+                        </Entry>
+                        <Statement>
+                        <text>This is the experiment.</text>
+                           <Context>
+                                 <Entry>
+                                 <term>Experiment</term>
+                                 <definition></definition>
+                                 </Entry>
+                                 <Statement>
+                                 <text>(status) This experiment is over.</text>
+                                 </Statement>
+                           </Context>
+                        </Statement>
+                  </Context>
+               </Statement>
+               <Statement>
+               <text>A third reason.</text>
+                  <Context>
+                        <Entry>
+                        <term>efforts</term>
+                        <definition></definition>
+                        </Entry>
+                        <Statement>
+                        <text>This is the experiment.</text>
+                           <Context>
+                                 <Entry>
+                                 <term>Another Experiment</term>
+                                 <definition></definition>
+                                 </Entry>
+                                 <Statement>
+                                 <text>(OMA) It could fly off. But this is supposed not to happen.</text>
+                                 </Statement>
+                                 <Statement>
+                                 <text>(OMA) It could disappear. But this is supposed not to happen.</text>
+                                 </Statement>
+                                 <Statement>
+                                 <text>(OMA) We could forget all about it. But this is supposed not to happen.</text>
+                                 </Statement>
+                           </Context>
+                        </Statement>
+                  </Context>
+               </Statement>
+               <Example>
+               <text>Un example du sac a dos rouge.</text>
+               </Example>
+         </Context>
+      </Answer>
+      <Answer>
+      <text>No.</text>
+         <Context>
+               <Statement>
+               <text>A fourth reason</text>
+               </Statement>
+               <Statement>
+               <text>A fifth motivation.</text>
+                  <Context>
+                        <Entry>
+                        <term>efforts</term>
+                        <definition></definition>
+                        </Entry>
+                        <Statement>
+                        <text>This is the experiment.</text>
+                           <Context>
+                                 <Entry>
+                                 <term>Mip-mip</term>
+                                 <definition></definition>
+                                 </Entry>
+                                 <Statement>
+                                 <text>speedy.</text>
+                                 </Statement>
+                           </Context>
+                        </Statement>
+                  </Context>
+               </Statement>
+               <Example>
+               <text>Un example du sac a dos bleu.</text>
+                  <Context>
+                        <Entry>
+                        <term>efforts</term>
+                        <definition></definition>
+                        </Entry>
+                        <Statement>
+                        <text>This is the experiment.</text>
+                           <Context>
+                                 <Entry>
+                                 <term>Another Experiment</term>
+                                 <definition></definition>
+                                 </Entry>
+                                 <Statement>
+                                 <text>This is the data.</text>
+                                 </Statement>
+                                 <Statement>
+                                 <text>This is the meta data.</text>
+                                 </Statement>
+                                 <Statement>
+                                 <text>This wa published in this paper: [12].</text>
+                                 </Statement>
+                           </Context>
+                        </Statement>
+                  </Context>
+               </Example>
+               <Example>
+               <text>Un example du sac a dos VERT.</text>
+               </Example>
+         </Context>
+      </Answer>
+      <Answer>
+      <text>Maybe.</text>
+         <Context>
+               <Statement>
+               <text>A sixth reason.</text>
+                  <Context>
+                        <Statement>
+                        <text>This is the experiment.</text>
+                           <Context>
+                                 <Entry>
+                                 <term>Mip-mip</term>
+                                 <definition></definition>
+                                 </Entry>
+                                 <Statement>
+                                 <text>speedy.</text>
+                                 </Statement>
+                           </Context>
+                        </Statement>
+                  </Context>
+               </Statement>
+         </Context>
+      </Answer>
+   </Answers>
+</Question>
