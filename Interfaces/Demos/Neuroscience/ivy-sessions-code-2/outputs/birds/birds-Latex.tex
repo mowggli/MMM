@@ -1,0 +1,300 @@
+\subsection{birds (long)}
+
+\begin{questionUnit}{Is it true that ' Birds are funny. '?}
+	\Context{}{
+		\lEntry{Birds}{animal}
+		\lEntry{funny}{}
+	}
+	\Answers{}{
+		\Statement{Yes.}{
+			\Context{}{
+				\Statement{They make me laugh.}{
+					\Context{}{
+						\lEntry{laugh}{}
+						\Statement{paper 1}{}
+					}}
+				\Statement{They bathe in puddles.}{
+					\Context{}{
+						\Statement{paper 2}{}
+					}}
+				\Statement{I sit at on a bench and watch birds.}{}
+			}}
+		\Statement{No.}{
+			\Context{}{
+				\Statement{They can be dirty.}{}
+			}}
+		\Statement{The question doesn't make sense or is irrelevant.}{
+			\Context{}{
+				\Statement{Squirrels might be even more funny.}{}
+			}}
+	}
+\end{questionUnit}
+
+
+\begin{center}
+	\scalebox{0.5}{\fbox{\footnotesize\begin{tikzpicture}[scale=0.5,node distance=1mm and 1mm,
+	Question/.style={diamond,draw,fill=orange,minimum size=10pt,align=center,inner sep=0},
+	Point/.style={circle,inner sep=0pt,minimum size=5pt,fill=black,draw},
+	Branch/.style={circle,inner sep=0pt,minimum size=5pt,fill=black,draw},
+	sAnd/.style={circle,draw,fill=yellow,inner sep=0.5pt,minimum size=5pt},
+	qAnd/.style={circle,draw,fill=orange,inner sep=0.5pt,minimum size=5pt},
+	Entry/.style={text width= 5cm,ellipse,draw,fill=blue!30,align=center,inner sep=0},
+	Example/.style={rectangle, fill=white,draw,align=center,inner sep=2},
+	ANSWER/.style={text width= 5cm,rectangle,draw,fill=yellow,align=center,inner sep=1},
+	Statement/.style={text width= 5cm,rectangle,draw,fill=yellow,align=center,inner sep=1}]
+	\tikzset{forexample/.style={->,>={Turned Square[open,length=0.3cm]},orange}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                  QUESTION                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\path (0,0) node [Question,text width= 3cm] (0) {Is it true that ' Birds are funny. '?};
+\path (0.south)+(0,-45) node [Branch] (0Branch) {};
+\path ($(0.south)!.1!(0Branch.north) $) node [qAnd] (0Context) {\tiny $\wedge$};
+\draw (0) -- (0Context) -- (0Branch);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   CONTEXT                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                    LEXIC                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\node  [Entry,left=2.5cm of 0Context] (3) {Birds:=animal};
+\draw (0Context) --  (3) ;
+\node  [Entry,above= of 3] (4) {funny:=};
+\draw (0Context) --  (4) ;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   ANSWER                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\draw (0Branch) -- ++(-3,-3) node (8) [ANSWER] {Yes.};
+\path ($(0Branch)!0.9!(8)$) node [sAnd] (8Context) {\tiny $\wedge$};
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   CONTEXT                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   SUPPORT                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\node  [Statement,left=2.5cm of 8Context] (18) {They make me laugh.};
+\draw (8Context) --  (18.east) ;
+\path (18.north)+(0,1) node [Branch] (18Branch) {};
+\path ($(18.north)!.3!(18Branch.south) $) node [sAnd] (18Context) {\tiny $\wedge$};
+\path (18Branch.north)+(0,0.5) node [Question] (18Question) {};
+\draw (18) -- (18Context) -- (18Branch) --  (18Question);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   CONTEXT                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                    LEXIC                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\node  [Entry,left=2.5cm of 18Context] (22) {laugh:=};
+\draw (18Context) --  (22) ;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   SUPPORT                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\node  [Statement,above= of 22] (25) {paper 1};
+\draw (18Context) --  (25.east) ;
+\node  [Statement,above=1.5cm of 18] (26) {They bathe in puddles.};
+\draw (8Context) --  (26.east) ;
+\path (26.north)+(0,1) node [Branch] (26Branch) {};
+\path ($(26.north)!.3!(26Branch.south) $) node [sAnd] (26Context) {\tiny $\wedge$};
+\path (26Branch.north)+(0,0.5) node [Question] (26Question) {};
+\draw (26) -- (26Context) -- (26Branch) --  (26Question);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   CONTEXT                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   SUPPORT                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\node  [Statement,left=2.5cm of 26Context] (32) {paper 2};
+\draw (26Context) --  (32.east) ;
+\node  [Statement,above=1.5cm of 26] (48) {I sit at on a bench and watch birds.};
+\draw (8Context) --  (48.east) ;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   ANSWER                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\draw (0Branch) -- ++(0,-8) node (9) [ANSWER] {No.};
+\path ($(0Branch)!0.9!(9)$) node [sAnd] (9Context) {\tiny $\wedge$};
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   CONTEXT                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   SUPPORT                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\node  [Statement,left=2.5cm of 9Context] (35) {They can be dirty.};
+\draw (9Context) --  (35.east) ;
+\path (35.north)+(0,1) node [Branch] (35Branch) {};
+\path ($(35.north)!.3!(35Branch.south) $) node [sAnd] (35Context) {\tiny $\wedge$};
+\path (35Branch.north)+(0,0.5) node [Question] (35Question) {};
+\draw (35) -- (35Context) -- (35Branch) --  (35Question);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   CONTEXT                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   ANSWER                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\draw (0Branch) -- ++(3,-13) node (10) [ANSWER] {The question doesn't make sense or is irrelevant.};
+\path ($(0Branch)!0.9!(10)$) node [sAnd] (10Context) {\tiny $\wedge$};
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   CONTEXT                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   SUPPORT                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\node  [Statement,left=2.5cm of 10Context] (42) {Squirrels might be even more funny.};
+\draw (10Context) --  (42.east) ;
+\path (42.north)+(0,1) node [Branch] (42Branch) {};
+\path ($(42.north)!.3!(42Branch.south) $) node [sAnd] (42Context) {\tiny $\wedge$};
+\path (42Branch.north)+(0,0.5) node [Question] (42Question) {};
+\draw (42) -- (42Context) -- (42Branch) --  (42Question);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   CONTEXT                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{tikzpicture}}}\end{center}
+
+
+\subsection{birds (short)}
+
+\begin{questionUnit}{Is it true that ' Birds are funny. '?}
+	\Context{}{
+		\lEntry{Birds}{animal}
+		\lEntry{funny}{}
+	}
+	\Answers{}{
+		\Statement{Yes.}{
+			\Context{}{
+				\Statement{They make me laugh.}{
+					\Context{}{
+						\lEntry{laugh}{}
+						\Statement{paper 1}{}
+					}}
+				\Statement{They bathe in puddles.}{
+					\Context{}{
+						\Statement{paper 2}{}
+					}}
+				\Statement{I sit at on a bench and watch birds.}{}
+			}}
+		\Statement{No.}{
+			\Context{}{
+				\Statement{They can be dirty.}{}
+			}}
+		\Statement{The question doesn't make sense or is irrelevant.}{
+			\Context{}{
+				\Statement{Squirrels might be even more funny.}{}
+			}}
+	}
+\end{questionUnit}
+
+
+\begin{center}
+	\scalebox{0.5}{\fbox{\footnotesize\begin{tikzpicture}[scale=0.5,node distance=1mm and 1mm,
+	Question/.style={diamond,draw,fill=orange,minimum size=10pt,align=center,inner sep=0},
+	Point/.style={circle,inner sep=0pt,minimum size=5pt,fill=black,draw},
+	Branch/.style={circle,inner sep=0pt,minimum size=5pt,fill=black,draw},
+	sAnd/.style={circle,draw,fill=yellow,inner sep=0.5pt,minimum size=5pt},
+	qAnd/.style={circle,draw,fill=orange,inner sep=0.5pt,minimum size=5pt},
+	Entry/.style={text width= 5cm,ellipse,draw,fill=blue!30,align=center,inner sep=0},
+	Example/.style={rectangle, fill=white,draw,align=center,inner sep=2},
+	ANSWER/.style={text width= 5cm,rectangle,draw,fill=yellow,align=center,inner sep=1},
+	Statement/.style={text width= 5cm,rectangle,draw,fill=yellow,align=center,inner sep=1}]
+	\tikzset{forexample/.style={->,>={Turned Square[open,length=0.3cm]},orange}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                  QUESTION                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\path (0,0) node [Question,text width= 3cm] (0) {Is it true that ' Birds are funny. '?};
+\path (0.south)+(0,-45) node [Branch] (0Branch) {};
+\path ($(0.south)!.1!(0Branch.north) $) node [qAnd] (0Context) {\tiny $\wedge$};
+\draw (0) -- (0Context) -- (0Branch);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   CONTEXT                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                    LEXIC                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\node  [Entry,left=2.5cm of 0Context] (3) {Birds:=animal};
+\draw (0Context) --  (3) ;
+\node  [Entry,above= of 3] (4) {funny:=};
+\draw (0Context) --  (4) ;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   ANSWER                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\draw (0Branch) -- ++(-3,-3) node (8) [ANSWER] {Yes.};
+\path ($(0Branch)!0.9!(8)$) node [sAnd] (8Context) {\tiny $\wedge$};
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   CONTEXT                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   SUPPORT                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\node  [Statement,left=2.5cm of 8Context] (18) {They make me laugh.};
+\draw (8Context) --  (18.east) ;
+\path (18.north)+(0,1) node [Branch] (18Branch) {};
+\path ($(18.north)!.3!(18Branch.south) $) node [sAnd] (18Context) {\tiny $\wedge$};
+\path (18Branch.north)+(0,0.5) node [Question] (18Question) {};
+\draw (18) -- (18Context) -- (18Branch) --  (18Question);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   CONTEXT                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                    LEXIC                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\node  [Entry,left=2.5cm of 18Context] (22) {laugh:=};
+\draw (18Context) --  (22) ;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   SUPPORT                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\node  [Statement,above= of 22] (25) {paper 1};
+\draw (18Context) --  (25.east) ;
+\node  [Statement,above=1.5cm of 18] (26) {They bathe in puddles.};
+\draw (8Context) --  (26.east) ;
+\path (26.north)+(0,1) node [Branch] (26Branch) {};
+\path ($(26.north)!.3!(26Branch.south) $) node [sAnd] (26Context) {\tiny $\wedge$};
+\path (26Branch.north)+(0,0.5) node [Question] (26Question) {};
+\draw (26) -- (26Context) -- (26Branch) --  (26Question);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   CONTEXT                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   SUPPORT                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\node  [Statement,left=2.5cm of 26Context] (32) {paper 2};
+\draw (26Context) --  (32.east) ;
+\node  [Statement,above=1.5cm of 26] (48) {I sit at on a bench and watch birds.};
+\draw (8Context) --  (48.east) ;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   ANSWER                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\draw (0Branch) -- ++(0,-8) node (9) [ANSWER] {No.};
+\path ($(0Branch)!0.9!(9)$) node [sAnd] (9Context) {\tiny $\wedge$};
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   CONTEXT                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   SUPPORT                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\node  [Statement,left=2.5cm of 9Context] (35) {They can be dirty.};
+\draw (9Context) --  (35.east) ;
+\path (35.north)+(0,1) node [Branch] (35Branch) {};
+\path ($(35.north)!.3!(35Branch.south) $) node [sAnd] (35Context) {\tiny $\wedge$};
+\path (35Branch.north)+(0,0.5) node [Question] (35Question) {};
+\draw (35) -- (35Context) -- (35Branch) --  (35Question);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   CONTEXT                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   ANSWER                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\draw (0Branch) -- ++(3,-13) node (10) [ANSWER] {The question doesn't make sense or is irrelevant.};
+\path ($(0Branch)!0.9!(10)$) node [sAnd] (10Context) {\tiny $\wedge$};
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   CONTEXT                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   SUPPORT                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\node  [Statement,left=2.5cm of 10Context] (42) {Squirrels might be even more funny.};
+\draw (10Context) --  (42.east) ;
+\path (42.north)+(0,1) node [Branch] (42Branch) {};
+\path ($(42.north)!.3!(42Branch.south) $) node [sAnd] (42Context) {\tiny $\wedge$};
+\path (42Branch.north)+(0,0.5) node [Question] (42Question) {};
+\draw (42) -- (42Context) -- (42Branch) --  (42Question);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                   CONTEXT                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{tikzpicture}}}\end{center}

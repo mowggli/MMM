@@ -1,0 +1,347 @@
+
+<ATOM>
+   <META>
+      <TAG>QUESTION</TAG>
+      <AUTHOR>Mathilde Noual</AUTHOR>
+      <ID>0</ID>
+      <PARENTID>NONE</PARENTID>
+   </META>
+   <TEXT>Is it true that ' Birds are funny. '?</TEXT>
+<CONTEXTS>
+   <META>
+      <TAG>CONTEXTS</TAG>
+      <AUTHOR>Mathilde Noual</AUTHOR>
+      <ID>6</ID>
+      <PARENTID>0</PARENTID>
+   </META>
+   <COUNT>1</COUNT>
+   <CONTEXT>
+      <META>
+         <TAG>CONTEXT-0</TAG>
+         <AUTHOR>Mathilde Noual</AUTHOR>
+         <ID>1</ID>
+         <PARENTID>6</PARENTID>
+      </META>
+   <LEXIC>
+      <META>
+         <TAG>LEXIC</TAG>
+         <AUTHOR>Mathilde Noual</AUTHOR>
+         <ID>2</ID>
+         <PARENTID>1</PARENTID>
+      </META>
+      <COUNT>2</COUNT>
+      <ENTRY>
+         <META>
+            <TAG>ENTRY-0</TAG>
+            <AUTHOR>Mathilde Noual</AUTHOR>
+            <ID>3</ID>
+            <PARENTID>2</PARENTID>
+         </META>
+         <TERM>Birds</TERM>
+         <DEFINITION>animal</DEFINITION>
+      </ENTRY>
+      <ENTRY>
+         <META>
+            <TAG>ENTRY-1</TAG>
+            <AUTHOR>Mathilde Noual</AUTHOR>
+            <ID>4</ID>
+            <PARENTID>2</PARENTID>
+         </META>
+         <TERM>funny</TERM>
+         <DEFINITION>?</DEFINITION>
+      </ENTRY>
+   </LEXIC>
+   </CONTEXT>
+</CONTEXTS>
+   <ATOMS>
+      <META>
+         <TAG>ANSWERS</TAG>
+         <AUTHOR>Mathilde Noual</AUTHOR>
+         <ID>7</ID>
+         <PARENTID>0</PARENTID>
+      </META>
+      <COUNT>3</COUNT>
+      <ATOM>
+         <META>
+            <TAG>ANSWER-0</TAG>
+            <AUTHOR>Mathilde Noual</AUTHOR>
+            <ID>8</ID>
+            <PARENTID>7</PARENTID>
+         </META>
+         <TEXT>Yes.</TEXT>
+      <CONTEXTS>
+         <META>
+            <TAG>CONTEXTS</TAG>
+            <AUTHOR>Mathilde Noual</AUTHOR>
+            <ID>11</ID>
+            <PARENTID>8</PARENTID>
+         </META>
+         <COUNT>1</COUNT>
+         <CONTEXT>
+            <META>
+               <TAG>CONTEXT-0</TAG>
+               <AUTHOR>Mathilde Noual</AUTHOR>
+               <ID>14</ID>
+               <PARENTID>11</PARENTID>
+            </META>
+               <ATOMS>
+                  <META>
+                     <TAG>SUPPORTING REASON</TAG>
+                     <AUTHOR>Mathilde Noual</AUTHOR>
+                     <ID>17</ID>
+                     <PARENTID>14</PARENTID>
+                  </META>
+                  <COUNT>3</COUNT>
+                  <ATOM>
+                     <META>
+                        <TAG>SUPPORTING REASON-0</TAG>
+                        <AUTHOR>Mathilde Noual</AUTHOR>
+                        <ID>18</ID>
+                        <PARENTID>17</PARENTID>
+                     </META>
+                     <TEXT>They make me laugh.</TEXT>
+                  <CONTEXTS>
+                     <META>
+                        <TAG>CONTEXTS</TAG>
+                        <AUTHOR>Mathilde Noual</AUTHOR>
+                        <ID>19</ID>
+                        <PARENTID>18</PARENTID>
+                     </META>
+                     <COUNT>1</COUNT>
+                     <CONTEXT>
+                        <META>
+                           <TAG>CONTEXT-0</TAG>
+                           <AUTHOR>Mathilde Noual</AUTHOR>
+                           <ID>20</ID>
+                           <PARENTID>19</PARENTID>
+                        </META>
+                     <LEXIC>
+                        <META>
+                           <TAG>LEXIC</TAG>
+                           <AUTHOR>Mathilde Noual</AUTHOR>
+                           <ID>21</ID>
+                           <PARENTID>20</PARENTID>
+                        </META>
+                        <COUNT>1</COUNT>
+                        <ENTRY>
+                           <META>
+                              <TAG>ENTRY-0</TAG>
+                              <AUTHOR>Mathilde Noual</AUTHOR>
+                              <ID>22</ID>
+                              <PARENTID>21</PARENTID>
+                           </META>
+                           <TERM>laugh</TERM>
+                           <DEFINITION>?</DEFINITION>
+                        </ENTRY>
+                     </LEXIC>
+                           <ATOMS>
+                              <META>
+                                 <TAG>SUPPORT</TAG>
+                                 <AUTHOR>Mathilde Noual</AUTHOR>
+                                 <ID>24</ID>
+                                 <PARENTID>20</PARENTID>
+                              </META>
+                              <COUNT>1</COUNT>
+                              <ATOM>
+                                 <META>
+                                    <TAG>REFERENCE</TAG>
+                                    <AUTHOR>bob(referenced by Mathilde Noual)</AUTHOR>
+                                    <ID>25</ID>
+                                    <PARENTID>24</PARENTID>
+                                 </META>
+                                 <TEXT>paper 1</TEXT>
+                              </ATOM>
+                           </ATOMS>
+                     </CONTEXT>
+                  </CONTEXTS>
+                  </ATOM>
+                  <ATOM>
+                     <META>
+                        <TAG>SUPPORTING REASON-1</TAG>
+                        <AUTHOR>Mathilde Noual</AUTHOR>
+                        <ID>26</ID>
+                        <PARENTID>17</PARENTID>
+                     </META>
+                     <TEXT>They bathe in puddles.</TEXT>
+                  <CONTEXTS>
+                     <META>
+                        <TAG>CONTEXTS</TAG>
+                        <AUTHOR>Mathilde Noual</AUTHOR>
+                        <ID>27</ID>
+                        <PARENTID>26</PARENTID>
+                     </META>
+                     <COUNT>1</COUNT>
+                     <CONTEXT>
+                        <META>
+                           <TAG>CONTEXT-0</TAG>
+                           <AUTHOR>Mathilde Noual</AUTHOR>
+                           <ID>28</ID>
+                           <PARENTID>27</PARENTID>
+                        </META>
+                           <ATOMS>
+                              <META>
+                                 <TAG>SUPPORT</TAG>
+                                 <AUTHOR>Mathilde Noual</AUTHOR>
+                                 <ID>31</ID>
+                                 <PARENTID>28</PARENTID>
+                              </META>
+                              <COUNT>1</COUNT>
+                              <ATOM>
+                                 <META>
+                                    <TAG>REFERENCE</TAG>
+                                    <AUTHOR>(referenced by Mathilde Noual)</AUTHOR>
+                                    <ID>32</ID>
+                                    <PARENTID>31</PARENTID>
+                                 </META>
+                                 <TEXT>paper 2</TEXT>
+                              </ATOM>
+                           </ATOMS>
+                     </CONTEXT>
+                  </CONTEXTS>
+                  </ATOM>
+                  <ATOM>
+                     <META>
+                        <TAG>EXPERIMENT</TAG>
+                        <AUTHOR>Mathilde Noual</AUTHOR>
+                        <ID>48</ID>
+                        <PARENTID>17</PARENTID>
+                     </META>
+                     <TEXT>I sit at on a bench and watch birds.</TEXT>
+                  <CONTEXTS>
+                     <META>
+                        <TAG>CONTEXTS</TAG>
+                        <AUTHOR>Mathilde Noual</AUTHOR>
+                        <ID>49</ID>
+                        <PARENTID>48</PARENTID>
+                     </META>
+                     <COUNT>0</COUNT>
+                  </CONTEXTS>
+                  </ATOM>
+               </ATOMS>
+         </CONTEXT>
+      </CONTEXTS>
+      </ATOM>
+      <ATOM>
+         <META>
+            <TAG>ANSWER-1</TAG>
+            <AUTHOR>Mathilde Noual</AUTHOR>
+            <ID>9</ID>
+            <PARENTID>7</PARENTID>
+         </META>
+         <TEXT>No.</TEXT>
+      <CONTEXTS>
+         <META>
+            <TAG>CONTEXTS</TAG>
+            <AUTHOR>Mathilde Noual</AUTHOR>
+            <ID>12</ID>
+            <PARENTID>9</PARENTID>
+         </META>
+         <COUNT>1</COUNT>
+         <CONTEXT>
+            <META>
+               <TAG>CONTEXT-0</TAG>
+               <AUTHOR>Mathilde Noual</AUTHOR>
+               <ID>15</ID>
+               <PARENTID>12</PARENTID>
+            </META>
+               <ATOMS>
+                  <META>
+                     <TAG>REASON AGAINST</TAG>
+                     <AUTHOR>Mathilde Noual</AUTHOR>
+                     <ID>34</ID>
+                     <PARENTID>15</PARENTID>
+                  </META>
+                  <COUNT>1</COUNT>
+                  <ATOM>
+                     <META>
+                        <TAG>REASON AGAINST-0</TAG>
+                        <AUTHOR>Mathilde Noual</AUTHOR>
+                        <ID>35</ID>
+                        <PARENTID>34</PARENTID>
+                     </META>
+                     <TEXT>They can be dirty.</TEXT>
+                  <CONTEXTS>
+                     <META>
+                        <TAG>CONTEXTS</TAG>
+                        <AUTHOR>Mathilde Noual</AUTHOR>
+                        <ID>36</ID>
+                        <PARENTID>35</PARENTID>
+                     </META>
+                     <COUNT>1</COUNT>
+                     <CONTEXT>
+                        <META>
+                           <TAG>CONTEXT-0</TAG>
+                           <AUTHOR>Mathilde Noual</AUTHOR>
+                           <ID>37</ID>
+                           <PARENTID>36</PARENTID>
+                        </META>
+                     </CONTEXT>
+                  </CONTEXTS>
+                  </ATOM>
+               </ATOMS>
+         </CONTEXT>
+      </CONTEXTS>
+      </ATOM>
+      <ATOM>
+         <META>
+            <TAG>ANSWER-2</TAG>
+            <AUTHOR>Mathilde Noual</AUTHOR>
+            <ID>10</ID>
+            <PARENTID>7</PARENTID>
+         </META>
+         <TEXT>The question doesn't make sense or is irrelevant.</TEXT>
+      <CONTEXTS>
+         <META>
+            <TAG>CONTEXTS</TAG>
+            <AUTHOR>Mathilde Noual</AUTHOR>
+            <ID>13</ID>
+            <PARENTID>10</PARENTID>
+         </META>
+         <COUNT>1</COUNT>
+         <CONTEXT>
+            <META>
+               <TAG>CONTEXT-0</TAG>
+               <AUTHOR>Mathilde Noual</AUTHOR>
+               <ID>16</ID>
+               <PARENTID>13</PARENTID>
+            </META>
+               <ATOMS>
+                  <META>
+                     <TAG>OBSOLETING REASON</TAG>
+                     <AUTHOR>Mathilde Noual</AUTHOR>
+                     <ID>41</ID>
+                     <PARENTID>16</PARENTID>
+                  </META>
+                  <COUNT>1</COUNT>
+                  <ATOM>
+                     <META>
+                        <TAG>OBSOLETING REASON-0</TAG>
+                        <AUTHOR>Mathilde Noual</AUTHOR>
+                        <ID>42</ID>
+                        <PARENTID>41</PARENTID>
+                     </META>
+                     <TEXT>Squirrels might be even more funny.</TEXT>
+                  <CONTEXTS>
+                     <META>
+                        <TAG>CONTEXTS</TAG>
+                        <AUTHOR>Mathilde Noual</AUTHOR>
+                        <ID>43</ID>
+                        <PARENTID>42</PARENTID>
+                     </META>
+                     <COUNT>1</COUNT>
+                     <CONTEXT>
+                        <META>
+                           <TAG>CONTEXT-0</TAG>
+                           <AUTHOR>Mathilde Noual</AUTHOR>
+                           <ID>44</ID>
+                           <PARENTID>43</PARENTID>
+                        </META>
+                     </CONTEXT>
+                  </CONTEXTS>
+                  </ATOM>
+               </ATOMS>
+         </CONTEXT>
+      </CONTEXTS>
+      </ATOM>
+   </ATOMS>
+</ATOM>

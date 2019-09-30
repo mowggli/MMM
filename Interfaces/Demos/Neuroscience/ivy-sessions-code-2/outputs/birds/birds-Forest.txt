@@ -1,0 +1,25 @@
+   Question: Is it true that ' Birds are funny. '?
+    |___Context
+    |  |___Entry: Birds:=animal
+    |  |___Entry: funny:=
+    |
+    |___Answers
+      |
+      |___Answer: Yes.
+      |  |___Context
+      |    |___Supporting reason: They make me laugh.
+      |    |  |___Context
+      |    |    |___Entry: laugh:=
+      |    |    |___Reference: paper 1
+      |    |___Supporting reason: They bathe in puddles.
+      |    |  |___Context
+      |    |    |___Reference: paper 2
+      |    |___Experiment: I sit at on a bench and watch birds.
+      |
+      |___Answer: No.
+      |  |___Context
+      |    |___Reason against: They can be dirty.
+      |
+      |___Answer: The question doesn't make sense or is irrelevant.
+        |___Context
+          |___Obsoleting reason: Squirrels might be even more funny.
