@@ -1,0 +1,248 @@
+ ./tiptop
+arguments[0] = Z
+arguments[1] = Blip-is-blop-MU.txt
+arguments[2] = Blip-is-blop-MU2.txt
+
+----------------------------------------------------------------------------------------------
+
+	(0) Please choose and type:
+	    'S' if you want to create some files based on a dummy predefined question unit (described in Blip-is-blop-MU.txt).
+	    'P' if you want to play the part of a neuroscientist registering a new question unit.
+	    'M' if you want to two pre-registered studies.
+CHOICE P
+	(0a) Do you want to register a study that is...
+	    ... not started --> type 'S' (for now same as option 'P'),
+	    ...  in process --> type 'P',
+	    ...    finished --> type 'F'
+STATUS P
+
+
+	(1) What is your working hypothesis?
+HYPOTHESIS People prefer to be wrong than fail to fit in with the rest of the group.
+	________________________________________________________________________________________________________________________
+	|                                                                                                                      |
+	|                   Here, the interface would ask the user if her working hypothesis is the same as                    |
+	|           similar ones previously recorded in the MMM by other users, assuming any similar ones are found.           |
+	|______________________________________________________________________________________________________________________|
+
+
+	(1a) Please can you list non-obvious terms that you used in  your wording of your working hypothesis?
+	    (type enter to skip at any point)
+	________________________________________________________________________________________________________________________
+	|                                                                                                                      |
+	|        Rather than have the user register her own new definition for each term or leave the definition blank,        |
+	|                   here the interface would make suggestions of definitions for her to choose from.                   |
+	|       These suggestions would be taken from the definitions previously given by other users for the same term.       |
+	|                                                                                                                      |
+	|               The user would also be asked if she wants to explicit relations between different terms.               |
+	|        Relations between terms would be chosen among a small finite collection of possible relations, namely:        |
+	|                                                                                                                      |
+	|               1. Is an instance, type or special case of / Is an abstraction or generalisation of                    |
+	|               2. Is a defining part or property of is Is needed to define / to make sense, needs                     |
+	|               3. Is a part or property of /                                                                          |
+	|               4. Is about                                                                                            |
+	|               5. Is a representation of / is represented by or is an interpretation of (cf lexic's :=)               |
+	|               6. Is translation or reformulation of (+explicitation of correspondence in both ways)                  |
+	|               7. Relates to (nb: using this type of link will be discouraged but still allowed)                      |
+	|______________________________________________________________________________________________________________________|
+
+
+TERM People
+	:= Anyone        
+TERM Be wrong
+	:= Disagree with an objective measure or convention.
+TERM Fit in
+	:= 
+TERM Group
+	:= 
+TERM 
+	(2) What reasons presently supports your working hypothesis?
+	    Please list one reason at a time.
+	    Reasons can be motivations, statements drawn from the state of the art of your field and/or from logical inferences.
+REASON FOR The second world war
+	(2a) Please can you list non-obvious terms that you used in  your wording of this reason?
+	    (type enter to skip at any point)
+TERM 
+	(2b) 	Please bibliographic reference (or type enter to skip):
+BIB 
+	(2) What reasons presently supports your working hypothesis?
+REASON FOR The auto kinetic effect
+	(2a) Please can you list non-obvious terms that you used in  your wording of this reason?
+	    (type enter to skip at any point)
+TERM 
+	(2b) 	Please bibliographic reference (or type enter to skip):
+BIB Sherif 1935 experiment
+	________________________________________________________________________________________________________________________
+	|                                                                                                                      |
+	|    Some or all of the content of this publication might have been registered by someone else in the MMM already.     |
+	|    In this case, the user would be shown the existing part(s) of the MMM relative to the publication and asked if    |
+	|    one of them expresses the (specific) part of the publication that she means to refer to. If (the specific part    |
+	|    of) the publication hasn't yet been registered in the MMM, the user would be given the possibility to register    |
+	|     it herself. If she chose not to, then later, someone else might do it for her. Then, the user would be asked     |
+	|      again (possibly years later) if she wanted to replace the reference by a link to the newly created part of      |
+	|                                         the MMM relative to the publication.                                         |
+	|______________________________________________________________________________________________________________________|
+
+
+	(2) What reasons presently supports your working hypothesis?
+REASON FOR 
+	________________________________________________________________________________________________________________________
+	|                                                                                                                      |
+	|                  Here, instead of typing statements expressing the reasons she is prompted to give,                  |
+	|                         the user could also select statements already registered in the MMM.                         |
+	|               If preregistered statements are almost yet not exactly what the user wants to register,                |
+	|                     she is given the opportunity to explicit the relationship/difference between                     |
+	|                                her newly registered statement and preregistered ones.                                |
+	|______________________________________________________________________________________________________________________|
+
+
+	(3) To your present knowledge are there reasons to expect your working hypothesis might not be true?
+	    Please list one reason at a time.
+	    Reasons can be negative results, facts or statements drawn from the state of the art of your field and/or from logical inferences, that disagree/oppose/negate your working hypothesis.
+REASON AGAINST There was no correct answer in Sherif's experiment
+	(3a) Please can you list non-obvious terms that you used in  your wording of this reason?
+	    (type enter to skip at any point)
+TERM 
+	(3b) 	Please bibliographic reference (or type enter to skip):
+BIB Sherif 1935 experiment
+	(3) What reasons disagree/oppose/negate your working hypothesis?
+REASON AGAINST Free-will
+	(3a) Please can you list non-obvious terms that you used in  your wording of this reason?
+	    (type enter to skip at any point)
+TERM Free-will
+	:= 
+TERM 
+	(3b) 	Please bibliographic reference (or type enter to skip):
+BIB 
+	(3) What reasons disagree/oppose/negate your working hypothesis?
+REASON AGAINST 
+	(4) Are there reasons to expect your working hypothesis might be irrelevant or absurd?
+	    Please list one reason at a time.
+	    Reasons can be ambiguity in the wording of the hypothesis, uncertainty in the meaning of certain terms it involves, etc.
+REASON Conformity and being right or wrong might not be the right way to look at things.
+	(4a) Please can you list non-obvious terms that you used in  your wording of this reason?
+	    (type enter to skip at any point)
+TERM 
+	(4b) 	Please bibliographic reference (or type enter to skip):
+BIB 
+	(4) What could make you working hypothesis irrelevant?
+REASON 
+	(5) Please describe your experiment/study (eg: experiment design and main methods).
+EXPERIMENT Describe Asch's experiemnt here
+	(5a) Please can you list non-obvious terms that you used in  your descripion of your experiment?
+	    (type enter to skip at any point)
+TERM xxx
+	:= xxx
+TERM xxx
+	:= 
+TERM 
+	(6) What might confound or undermine your study?
+	    What could go wrong in your experiment?
+	    Please list all possibilities you can think of.
+CONFOUNDER/LIMIT one cofounder
+	(6a) Have you addressed this confounder? Have you checked it couldn't go wrong? Please type 'Y' for yes, and 'N' for no.
+CHOICE Y
+	(6b) How? Please describe your experiment.
+EXPERIMENT this is it.
+	(6b.a) Please can you list non-obvious terms that you used in  your descripion of your experiment?
+	    (type enter to skip at any point)
+TERM xxx
+	:= xxx
+TERM xxx
+	:= 
+TERM 
+	(6) What might confound or undermine your study?
+	    What could go wrong in your experiment?
+	    Please list all possibilities you can think of.
+CONFOUNDER/LIMIT Another one
+	(6a) Have you addressed this confounder? Have you checked it couldn't go wrong? Please type 'Y' for yes, and 'N' for no.
+CHOICE Y
+	(6b) How? Please describe your experiment.
+EXPERIMENT 
+	(6) What might confound or undermine your study?
+	    What could go wrong in your experiment?
+	    Please list all possibilities you can think of.
+CONFOUNDER/LIMIT Another
+	(6a) Have you addressed this confounder? Have you checked it couldn't go wrong? Please type 'Y' for yes, and 'N' for no.
+CHOICE N
+	(6) What might confound or undermine your study?
+	    What could go wrong in your experiment?
+	    Please list all possibilities you can think of.
+CONFOUNDER/LIMIT 
+	(7) What are your results so far? Please register/upload your (meta)data and your interpretation of it.	  !TODO! 
+DATA the data
+	(8) Please name the individual(s), team(s) and/or institution(s) actively involved in performing this study
+AUTHOR Asch
+	(9) If this experiment is successful what will it show that supports your working hypothesis?
+INTERPRETATION/CONCLUSION Same as WH
+	(9a) Please can you list non-obvious terms that you used in  what you wrote?
+	    (type enter to skip at any point)
+TERM 
+	(10) Have you published any results so far? If so, enter reference of publication.
+BIB ref
+----------------------------------------------------------------------------------------------
+
+This is what the study looks like in MMM format:
+
+ Question: Is it true that ' People prefer to be wrong than f... [CLICK TO SEE MORE]
+  |___Context
+  |  |___Entry: People:=Anyone
+  |  |___Entry: Be wrong:=Disagree with an objective measure or convention.
+  |  |___Entry: Fit in:=??
+  |  |___Entry: Group:=??
+  |
+  |___Answers
+    |
+    |___Answer: Yes.
+    |  |___Context
+    |    |___Upstream Statement: The second world war
+    |    |___Upstream Statement: The auto kinetic effect
+    |    |  |___Context
+    |    |    |___Publication Reference: Published in Sherif 1935 experiment.
+    |    |___Main Argument: Same as WH
+    |      |___Context
+    |        |___Publication Reference: Published in ref.
+    |        |___Statement: This statement (refPA) has not yet been proven. It... [CLICK TO SEE MORE]
+    |          |___Context
+    |            |___Experiment Description: Describe Asch's experiemnt here
+    |              |___Context
+    |                |___Entry: xxx:=xxx
+    |                |___Entry: xxx:=??
+    |                |___Addressed Confounder: one cofounder But this issue has been addressed.
+    |                |  |___Context
+    |                |    |___Experiment Description: this is it.
+    |                |      |___Context
+    |                |        |___Entry: xxx:=xxx
+    |                |        |___Entry: xxx:=??
+    |                |___Addressed Confounder: Another one But this issue has been addressed.
+    |                |  |___Context
+    |                |    |___Experiment Description: Missing experiment description.
+    |                |___Confounder: Another But this is assumed not to happen.
+    |                |___Confounder: Some unforseen thing could go wrong. But this is a... [CLICK TO SEE MORE]
+    |                |___Data: the data
+    |
+    |___Answer: No.
+    |  |___Context
+    |    |___Upstream Statement: There was no correct answer in Sherif's experiment
+    |    |  |___Context
+    |    |    |___Publication Reference: Published in Sherif 1935 experiment.
+    |    |___Upstream Statement: Free-will
+    |      |___Context
+    |        |___Entry: Free-will:=??
+    |
+    |___Answer: The question doesn't make sense or is irrelevant.
+      |___Context
+        |___Upstream Statement: Conformity and being right or wrong might not be t... [CLICK TO SEE MORE]
+
+----------------------------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------------------------
+Created folder ./outputs/PeopleprefertobewrongthanfailtofitinwiththerestofthegroupOriginal
+Wrote 'tree-like visualisation' file:	 ./outputs/PeopleprefertobewrongthanfailtofitinwiththerestofthegroupOriginal/PeopleprefertobewrongthanfailtofitinwiththerestofthegroupOriginal-Forest.txt 
+Wrote 'tree-like visualisation' file:	 ./outputs/PeopleprefertobewrongthanfailtofitinwiththerestofthegroupOriginal/PeopleprefertobewrongthanfailtofitinwiththerestofthegroupOriginal-Forest-short.txt 
+Wrote markup file:			 ./outputs/PeopleprefertobewrongthanfailtofitinwiththerestofthegroupOriginal/PeopleprefertobewrongthanfailtofitinwiththerestofthegroupOriginal-MU.txt 
+Wrote markup file:			 ./outputs/PeopleprefertobewrongthanfailtofitinwiththerestofthegroupOriginal/PeopleprefertobewrongthanfailtofitinwiththerestofthegroupOriginal-MU-short.txt 
+Wrote Latex file:			 ./outputs/PeopleprefertobewrongthanfailtofitinwiththerestofthegroupOriginal/PeopleprefertobewrongthanfailtofitinwiththerestofthegroupOriginal-Latex.tex 
+----------------------------------------------------------------------------------------------
+All memory allocations freed (alloCount = 0).

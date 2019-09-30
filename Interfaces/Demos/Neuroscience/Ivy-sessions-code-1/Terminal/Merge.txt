@@ -1,0 +1,363 @@
+./tiptop
+arguments[0] = Z
+arguments[1] = Blip-is-blop-MU.txt
+arguments[2] = Blip-is-blop-MU2.txt
+
+----------------------------------------------------------------------------------------------
+
+	(0) Please choose and type:
+	    'S' if you want to create some files based on a dummy predefined question unit (described in Blip-is-blop-MU.txt).
+	    'P' if you want to play the part of a neuroscientist registering a new question unit.
+	    'M' if you want to two pre-registered studies.
+CHOICE M
+	(0a) What is the name of the markup file where the 1st study is described? (if you skip, defaults to Blip-is-blop-MU.txt)
+FILENAME 
+Opened filename = Blip-is-blop-MU.txt
+	|                                                                                                                      |
+
+
+This is what the study looks like in MMM format:
+
+ Question: Is it true that ' Blip is blop. '?
+  |___Context
+  |  |___Entry: a:=b
+  |  |___Entry: c:=d
+  |  |___Entry: e:=f
+  |  |___Entry: g:=h
+  |
+  |___Answers
+    |
+    |___Answer: Yes.
+    |  |___Context
+    |    |___Entry: Blip:=??
+    |    |___Upstream Statement: Alice's first reason for.
+    |    |  |___Context
+    |    |    |___Entry: c:=d
+    |    |    |___Entry: e:=??
+    |    |    |___Publication Reference: Published in paper.
+    |    |___Upstream Statement: Alice's second Reason for.
+    |    |  |___Context
+    |    |    |___Entry: f:=g
+    |    |    |___Publication Reference: Published in paper.
+    |    |___Main Argument: Flip is flop.
+    |      |___Context
+    |        |___Entry: h:=i
+    |        |___Entry: j:=??
+    |        |___Publication Reference: No publication referenced.
+    |        |___Statement: This statement (refPA) has not yet been proven. It... [CLICK TO SEE MORE]
+    |          |___Context
+    |            |___Experiment Description: Experiment description.
+    |              |___Context
+    |                |___Entry: k:=l
+    |                |___Addressed Confounder: It could fly off. But this issue has been addresse... [CLICK TO SEE MORE]
+    |                |  |___Context
+    |                |    |___Experiment Description: Sub Experiment description.
+    |                |      |___Context
+    |                |        |___Entry: m:=n
+    |                |___Confounder: It could blow up. But this is assumed not to happe... [CLICK TO SEE MORE]
+    |                |___Addressed Confounder: It could disappear. But this issue has been addres... [CLICK TO SEE MORE]
+    |                |  |___Context
+    |                |    |___Experiment Description: Missing experiment description.
+    |                |___Confounder: Some unforseen thing could go wrong. But this is a... [CLICK TO SEE MORE]
+    |                |___Known Limitation: We acknowledge there is this limitation to our stu... [CLICK TO SEE MORE]
+    |                |___Data: Some data.
+    |
+    |___Answer: No.
+    |  |___Context
+    |    |___Upstream Statement: Alice's first Reason against.
+    |    |  |___Context
+    |    |    |___Entry: o:=p
+    |    |    |___Entry: q:=??
+    |    |    |___Publication Reference: Published in paper.
+    |    |___Upstream Statement: Alice's second Reason against.
+    |      |___Context
+    |        |___Publication Reference: Published in paper.
+    |
+    |___Answer: The question doesn't make sense or is irrelevant.
+      |___Context
+        |___Upstream Statement: Alice's first Absurd.
+        |  |___Context
+        |    |___Entry: r:=s
+        |    |___Publication Reference: Published in paper..
+        |___Upstream Statement: Alice's second Absurd.
+          |___Context
+            |___Publication Reference: Published in paper.
+	|                                                                                                                      |
+
+
+	(0b) What is the name of the markup file where the 2nd study is described? (if you skip, defaults to Blip-is-blop-MU2.txt)
+FILENAME 
+Opened filename = Blip-is-blop-MU2.txt
+	|                                                                                                                      |
+
+
+This is what the 2nd study looks like in MMM format:
+
+ Question: Is it true that ' Blip is Flop. '?
+  |___Context
+  |  |___Entry: A:=B
+  |  |___Entry: c:=d
+  |  |___Entry: e:=F
+  |  |___Entry: g:=
+  |  |___Entry: I:=J
+  |  |___Entry: K:=L
+  |
+  |___Answers
+    |
+    |___Answer: Yes.
+    |  |___Context
+    |    |___Upstream Statement: Bob's first reason for.
+    |    |  |___Context
+    |    |    |___Entry: C:=D
+    |    |    |___Entry: E:=??
+    |    |    |___Publication Reference: Published in paper.
+    |    |___Upstream Statement: Bob's second Reason for.
+    |    |  |___Context
+    |    |    |___Entry: F:=G
+    |    |    |___Publication Reference: Published in paper.
+    |    |___Main Argument: Klip is klop.
+    |      |___Context
+    |        |___Entry: h:=i
+    |        |___Entry: J:=??
+    |        |___Publication Reference: No publication referenced.
+    |        |___Statement: This statement (refPA) has not yet been proven. It... [CLICK TO SEE MORE]
+    |          |___Context
+    |            |___Experiment Description: Experiment description.
+    |              |___Context
+    |                |___Entry: k:=l
+    |                |___Addressed Confounder: It could fly off. But this issue has been addresse... [CLICK TO SEE MORE]
+    |                |  |___Context
+    |                |    |___Experiment Description: Sub Experiment description.
+    |                |      |___Context
+    |                |        |___Entry: m:=n
+    |                |___Confounder: It could blow up. But this is assumed not to happe... [CLICK TO SEE MORE]
+    |                |___Addressed Confounder: It could disappear. But this issue has been addres... [CLICK TO SEE MORE]
+    |                |  |___Context
+    |                |    |___Experiment Description: Missing experiment description.
+    |                |___Confounder: Some unforseen thing could go wrong. But this is a... [CLICK TO SEE MORE]
+    |                |___Known Limitation: We acknowledge there is this limitation to our stu... [CLICK TO SEE MORE]
+    |                |___Data: Some data.
+    |
+    |___Answer: No.
+    |  |___Context
+    |    |___Upstream Statement: Bob's first Reason against.
+    |    |  |___Context
+    |    |    |___Entry: o:=p
+    |    |    |___Entry: q:=??
+    |    |    |___Publication Reference: Published in paper.
+    |    |___Upstream Statement: Bob's second Reason against.
+    |      |___Context
+    |        |___Publication Reference: Published in paper.
+    |
+    |___Answer: The question doesn't make sense or is irrelevant.
+      |___Context
+        |___Upstream Statement: Bob's first Absurd.
+        |  |___Context
+        |    |___Entry: r:=S
+        |    |___Publication Reference: Published in paper..
+        |___Upstream Statement: Bob's second Absurd.
+          |___Context
+            |___Publication Reference: Published in paper.
+	|                                                                                                                      |
+
+
+	________________________________________________________________________________________________________________________
+	|                                                                                                                      |
+	|  Eventually, we wouldn't wait for users to propose two registered candidates for merging. The merging would be done  |
+	| on the fly when new units are registered. The new units would be compared with the ones already in the MMM database. |
+	|                                                                                                                      |
+	|   NB: 'Merging' might be misleading. The two original units are not erased. A third one, more general is created.    |
+	|                              The later becomes a new way to access each of the former.                               |
+	|______________________________________________________________________________________________________________________|
+
+
+SPECIFIC QUESTION 1: Is it true that ' Blip is blop. '?
+SPECIFIC QUESTION 2: Is it true that ' Blip is Flop. '?
+GENERAL QUESTION  : Is it true that ' Blip is blop./Blip is Flop. '?
+	________________________________________________________________________________________________________________________
+	|                                                                                                                      |
+	|   The formulation of the general question would be done more carefully. Actually this is where most of the work is   |
+	|  done by the program: the program searches for similarities and differences in the wordings of the two questions.    |
+	|  It might also compare the content of answers and of contexts to find more similarities and differences it can use   |
+	|                                              to design a new question.                                               |
+	|                                                                                                                      |
+	|                                                         /!\                                                          |
+	|     The role of the program is only to make a suggestion. Generally, the program is a very efficient assistant.      |
+	|     All decisions are left to living, thinking humans in order to avoid building hidden biaises into the system.     |
+	|      --> The program isn't indispensable. Everything it does can be done 'by hand'. The converse doesn't hold.       |
+	|                                                                                                                      |
+	|______________________________________________________________________________________________________________________|
+
+
+
+
+Lexic of 1st question:
+
+     |___Entry: a:=b
+     |___Entry: c:=d
+     |___Entry: e:=f
+     |___Entry: g:=h
+
+Lexic of 2nd question:
+
+     |___Entry: A:=B
+     |___Entry: c:=d
+     |___Entry: e:=F
+     |___Entry: g:=
+     |___Entry: I:=J
+     |___Entry: K:=L
+
+Lexic of resulting general question:
+
+     |___Entry: c:=d
+     |___Entry: e:=?? ----->>----- f \/ F
+     |___Entry: g:=?? ----->>----- h \/ 
+
+	________________________________________________________________________________________________________________________
+	|                                                                                                                      |
+	| In this demo, the program brutally rejects entries that aren't identical (term & definition) in the 2 source lexics. |
+	|Eventually, it would identify similarities between entries and ask the source authors what they think should be done: |
+	|      merge and generalise, or distinguish and push down into their respective answers to the general question.       |
+	|                                                                                                                      |
+	|  When terms are identical but definitions are not and authors disagree, this can be taken as a sign their questions  |
+	|shouldn't be merged, or wordings should be tweaked to account for the discrepancy. If the discrepancy is not critical,|
+	|        the simple solution can be adopted, namely, put no definition but add a link to each of the original.         |
+	|______________________________________________________________________________________________________________________|
+
+
+
+First source's original answers:
+
+  |
+  |___Answers
+    |
+    |___Answer: Yes.
+    |  |___Context
+    |    |___Entry: Blip:=??
+    |    |___Upstream Statement: Alice's first reason for.
+    |    |___Upstream Statement: Alice's second Reason for.
+    |    |___Main Argument: Flip is flop.
+    |
+    |___Answer: No.
+    |  |___Context
+    |    |___Upstream Statement: Alice's first Reason against.
+    |    |___Upstream Statement: Alice's second Reason against.
+    |
+    |___Answer: The question doesn't make sense or is irrelevant.
+      |___Context
+        |___Upstream Statement: Alice's first Absurd.
+        |___Upstream Statement: Alice's second Absurd.
+
+
+Second source's original answers:
+
+  |
+  |___Answers
+    |
+    |___Answer: Yes.
+    |  |___Context
+    |    |___Upstream Statement: Bob's first reason for.
+    |    |___Upstream Statement: Bob's second Reason for.
+    |    |___Main Argument: Klip is klop.
+    |
+    |___Answer: No.
+    |  |___Context
+    |    |___Upstream Statement: Bob's first Reason against.
+    |    |___Upstream Statement: Bob's second Reason against.
+    |
+    |___Answer: The question doesn't make sense or is irrelevant.
+      |___Context
+        |___Upstream Statement: Bob's first Absurd.
+        |___Upstream Statement: Bob's second Absurd.
+
+
+Combination of their answers:
+
+  |
+  |___Answers
+    |
+    |___Answer: Yes. (acc. 1st source)
+    |  |___Context
+    |    |___Entry: Blip:=??
+    |    |___Entry: a:=b
+    |
+    |___Answer: No. (acc. 1st source)
+    |  |___Context
+    |    |___Entry: a:=b
+    |
+    |___Answer: The question doesn't make sense or is irrelevant. ... [CLICK TO SEE MORE]
+    |  |___Context
+    |    |___Entry: a:=b
+    |
+    |___Answer: Yes. (acc. 2nd source)
+    |  |___Context
+    |    |___Entry: A:=B
+    |    |___Entry: I:=J
+    |    |___Entry: K:=L
+    |
+    |___Answer: No. (acc. 2nd source)
+    |  |___Context
+    |    |___Entry: A:=B
+    |    |___Entry: I:=J
+    |    |___Entry: K:=L
+    |
+    |___Answer: The question doesn't make sense or is irrelevant. ... [CLICK TO SEE MORE]
+      |___Context
+        |___Entry: A:=B
+        |___Entry: I:=J
+        |___Entry: K:=L
+
+
+ Question: Is it true that ' Blip is blop./Blip is Flop. '?
+  |___Context
+  |  |___Entry: c:=d
+  |  |___Entry: e:=?? ----->>----- f \/ F
+  |  |___Entry: g:=?? ----->>----- h \/ 
+  |
+  |___Answers
+    |
+    |___Answer: Yes. (acc. 1st source)
+    |  |___Context
+    |    |___Entry: Blip:=??
+    |    |___Entry: a:=b
+    |
+    |___Answer: No. (acc. 1st source)
+    |  |___Context
+    |    |___Entry: a:=b
+    |
+    |___Answer: The question doesn't make sense or is irrelevant. ... [CLICK TO SEE MORE]
+    |  |___Context
+    |    |___Entry: a:=b
+    |
+    |___Answer: Yes. (acc. 2nd source)
+    |  |___Context
+    |    |___Entry: A:=B
+    |    |___Entry: I:=J
+    |    |___Entry: K:=L
+    |
+    |___Answer: No. (acc. 2nd source)
+    |  |___Context
+    |    |___Entry: A:=B
+    |    |___Entry: I:=J
+    |    |___Entry: K:=L
+    |
+    |___Answer: The question doesn't make sense or is irrelevant. ... [CLICK TO SEE MORE]
+      |___Context
+        |___Entry: A:=B
+        |___Entry: I:=J
+        |___Entry: K:=L
+
+
+	________________________________________________________________________________________________________________________
+	|                                                                                                                      |
+	|                                           Todo! NB: no recursivity needed.                                           |
+	|______________________________________________________________________________________________________________________|
+
+
+
+
+	(-1c) Do you want to create folder 'BlipisblopBlipisFlopCommon' with output Latex and tree-like visualisation files?  Please type 'Y' for yes, and 'N' for no.
+CHOICE 
+
+N
+All memory allocations freed (alloCount = 0).

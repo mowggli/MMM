@@ -1,0 +1,239 @@
+./tiptop P
+arguments[0] = P
+arguments[1] = Blip-is-blop-MU.txt
+arguments[2] = Blip-is-blop-MU2.txt
+
+----------------------------------------------------------------------------------------------
+
+	(0a) Do you want to register a study that is...
+	    ... not started --> type 'S' (for now same as option 'P'),
+	    ...  in process --> type 'P',
+	    ...    finished --> type 'F'
+STATUS P
+
+
+	(1) What is your working hypothesis?
+HYPOTHESIS Transcranial slow oscillation current stimulation improve sleep-dependent memory consolidation in children with ADHD.
+	________________________________________________________________________________________________________________________
+	|                                                                                                                      |
+	|                   Here, the interface would ask the user if her working hypothesis is the same as                    |
+	|           similar ones previously recorded in the MMM by other users, assuming any similar ones are found.           |
+	|______________________________________________________________________________________________________________________|
+
+
+	(1a) Please can you list non-obvious terms that you used in  your wording of your working hypothesis?
+	    (type enter to skip at any point)
+	________________________________________________________________________________________________________________________
+	|                                                                                                                      |
+	|        Rather than have the user register her own new definition for each term or leave the definition blank,        |
+	|                   here the interface would make suggestions of definitions for her to choose from.                   |
+	|       These suggestions would be taken from the definitions previously given by other users for the same term.       |
+	|                                                                                                                      |
+	|               The user would also be asked if she wants to explicit relations between different terms.               |
+	|        Relations between terms would be chosen among a small finite collection of possible relations, namely:        |
+	|                                                                                                                      |
+	|               1. Is an instance, type or special case of / Is an abstraction or generalisation of                    |
+	|               2. Is a defining part or property of is Is needed to define / to make sense, needs                     |
+	|               3. Is a part or property of /                                                                          |
+	|               4. Is about                                                                                            |
+	|               5. Is a representation of / is represented by or is an interpretation of (cf lexic's :=)               |
+	|               6. Is translation or reformulation of (+explicitation of correspondence in both ways)                  |
+	|               7. Relates to (nb: using this type of link will be discouraged but still allowed)                      |
+	|______________________________________________________________________________________________________________________|
+
+
+TERM Slow oscillation
+	:= Synchronized EEG activity with frequency range of 0.5-2Hz
+TERM ADHD
+	:= Attention deficit hyperactivity disorder
+TERM Memory consolidation
+	:= a category of processes that stabilize a memory trace after its initial acquisition
+TERM Improve
+	:= 
+TERM 
+	(2) What reasons presently supports your working hypothesis?
+	    Please list one reason at a time.
+	    Reasons can be motivations, statements drawn from the state of the art of your field and/or from logical inferences.
+REASON FOR Memory benefits particularly from slow wave sleep (SWS) which is characterized electrophysiologically by slow143oscillations (around 0.8 Hz) occurring during slow wave activity (0.5–5 Hz).
+	(2a) Please can you list non-obvious terms that you used in  your wording of this reason?
+	    (type enter to skip at any point)
+TERM Slow wave
+	:= 
+TERM Electrophysiologically
+	:= 
+TERM 
+	(2b) 	Please bibliographic reference (or type enter to skip):
+BIB 
+	(2) What reasons presently supports your working hypothesis?
+REASON FOR Transcranial oscillating direct current stimulation at 0.75 Hz during SWS in young healthy adults increased SO power,151resulting in boosted sleep-dependent consolidation of declarative memory.
+	(2a) Please can you list non-obvious terms that you used in  your wording of this reason?
+	    (type enter to skip at any point)
+TERM Direct
+	:= 
+TERM 
+	(2b) 	Please bibliographic reference (or type enter to skip):
+BIB [S2006@LMarshall]
+	________________________________________________________________________________________________________________________
+	|                                                                                                                      |
+	|    Some or all of the content of this publication might have been registered by someone else in the MMM already.     |
+	|    In this case, the user would be shown the existing part(s) of the MMM relative to the publication and asked if    |
+	|    one of them expresses the (specific) part of the publication that she means to refer to. If (the specific part    |
+	|    of) the publication hasn't yet been registered in the MMM, the user would be given the possibility to register    |
+	|     it herself. If she chose not to, then later, someone else might do it for her. Then, the user would be asked     |
+	|      again (possibly years later) if she wanted to replace the reference by a link to the newly created part of      |
+	|                                         the MMM relative to the publication.                                         |
+	|______________________________________________________________________________________________________________________|
+
+
+	(2) What reasons presently supports your working hypothesis?
+REASON FOR Children with ADHD display altered slow EEG-activity during slow wave sleep and show deficits in the sleep associated consolidation of declarative memory.
+	(2a) Please can you list non-obvious terms that you used in  your wording of this reason?
+	    (type enter to skip at any point)
+TERM Altered
+	:= 
+TERM Deficits
+	:= 
+TERM 
+	(2b) 	Please bibliographic reference (or type enter to skip):
+BIB \cite{prehn2011reduced}
+	(2) What reasons presently supports your working hypothesis?
+REASON FOR 
+	________________________________________________________________________________________________________________________
+	|                                                                                                                      |
+	|                  Here, instead of typing statements expressing the reasons she is prompted to give,                  |
+	|                         the user could also select statements already registered in the MMM.                         |
+	|               If preregistered statements are almost yet not exactly what the user wants to register,                |
+	|                     she is given the opportunity to explicit the relationship/difference between                     |
+	|                                her newly registered statement and preregistered ones.                                |
+	|______________________________________________________________________________________________________________________|
+
+
+	(3) To your present knowledge are there reasons to expect your working hypothesis might not be true?
+	    Please list one reason at a time.
+	    Reasons can be negative results, facts or statements drawn from the state of the art of your field and/or from logical inferences, that disagree/oppose/negate your working hypothesis.
+REASON AGAINST SO tDCS applied to healthy elderly failed to show an effect on memory consolidation.
+	(3a) Please can you list non-obvious terms that you used in  your wording of this reason?
+	    (type enter to skip at any point)
+TERM 
+	(3b) 	Please bibliographic reference (or type enter to skip):
+BIB \cite{eggert2013no}
+	(3) What reasons disagree/oppose/negate your working hypothesis?
+REASON AGAINST 
+	(4) Are there reasons to expect your working hypothesis might be irrelevant or absurd?
+	    Please list one reason at a time.
+	    Reasons can be ambiguity in the wording of the hypothesis, uncertainty in the meaning of certain terms it involves, etc.
+REASON 
+	(5) Please describe your experiment/study (eg: experiment design and main methods).
+EXPERIMENT 12 children with ADHD underwent a toDCS and a sham condition in a double-blind crossover study design conducted in a sleep laboratory. Memory was tested using a 2D object-location task. In addition, 12 healthy children performed the same memory task in their home environment, with no stimulation.
+	(5a) Please can you list non-obvious terms that you used in  your descripion of your experiment?
+	    (type enter to skip at any point)
+TERM 2D object-location task
+	:= Computer card game 'Memory' created with E-Prime 2.1 by Psychology Software Tools
+TERM toDCS
+	:= Transcranial oscillating direct current stimulation, following protocol [MethodtoDCS@S2006@LMarshall]
+TERM 
+	(6) What might confound or undermine your study?
+	    What could go wrong in your experiment?
+	    Please list all possibilities you can think of.
+CONFOUNDER/LIMIT Differences between healthy children and children with ADHD in memory performance might have been underestimated as the controls performed the tasks and slept at home, not comparable to the settings for children with ADHD.
+	(6a) Have you addressed this confounder? Have you checked it couldn't go wrong? Please type 'Y' for yes, and 'N' for no.
+CHOICE Y
+	(6b) How? Please describe your experiment.
+EXPERIMENT To ensure that the home and laboratory conditions were comparable, parents of control children were instructed to provide a quiet room and to take care that no disturbing events happened during the sessions. Moreover, by introducing a learning criterion (60 per cent), we made sure that patients and healthy children ended the encoding session on a comparable level of encoding.
+	(6b.a) Please can you list non-obvious terms that you used in  your descripion of your experiment?
+	    (type enter to skip at any point)
+TERM Level of encoding
+	:= 
+TERM Learning criterion
+	:= 
+TERM 60%
+	:= 
+TERM Disturbing
+	:= 
+TERM 
+	(6) What might confound or undermine your study?
+	    What could go wrong in your experiment?
+	    Please list all possibilities you can think of.
+CONFOUNDER/LIMIT 
+	(7) What are your results so far? Please register/upload your (meta)data and your interpretation of it.	  !TODO! 
+DATA 1.Unstimulated children with ADHD displayed worse sleep-dependent memory consolidation than healthy controls. 2.After stimulation, the sleep-dependent memory performance did not differ between children with ADHD and healthy controls. 3.Stimulation did not increase the SO power during the post-stimulation intervals, except in sleep stage 4 epoch. 4 Stimulation did not affect the performance on any control variable (mood, alertness, or working memory performance). Also link to data source.
+	(8) Please name the individual(s), team(s) and/or institution(s) actively involved in performing this study
+AUTHOR Prehn-Kristensen A, Munz M, Göder R, Wilhelm I, Korr K, Vahl W, Wiesner CD, Baving L.
+	(9) If this experiment is successful what will it show that supports your working hypothesis?
+INTERPRETATION/CONCLUSION We showed that increasing slow oscillation power during sleep by toDCS can alleviate declarative memory deficits in children with ADHD.
+	(9a) Please can you list non-obvious terms that you used in  what you wrote?
+	    (type enter to skip at any point)
+TERM Alleviate
+	:= 
+TERM 
+	(10) Have you published any results so far? If so, enter reference of publication.
+BIB Brain Stimul. 2014 Nov-Dec;7(6):793-9. doi: 10.1016/j.brs.2014.07.036. Epub 2014 Jul 23.
+	________________________________________________________________________________________________________________________
+
+This is what the study looks like in MMM format:
+
+ Question: Is it true that ' Transcranial slow oscillation cu... [CLICK TO SEE MORE]
+  |___Context
+  |  |___Entry: Slow oscillation:=Synchronized EEG activity with frequency range of ... [CLICK TO SEE MORE]
+  |  |___Entry: ADHD:=Attention deficit hyperactivity disorder
+  |  |___Entry: Memory consolidation:=a category of processes that stabilize a memory tr... [CLICK TO SEE MORE]
+  |  |___Entry: Improve:=??
+  |
+  |___Answers
+    |
+    |___Answer: Yes.
+    |  |___Context
+    |    |___Upstream Statement: Memory benefits particularly from slow wave sleep ... [CLICK TO SEE MORE]
+    |    |  |___Context
+    |    |    |___Entry: Slow wave:=??
+    |    |    |___Entry: Electrophysiologically:=??
+    |    |___Upstream Statement: Transcranial oscillating direct current stimulatio... [CLICK TO SEE MORE]
+    |    |  |___Context
+    |    |    |___Entry: Direct:=??
+    |    |    |___Publication Reference: Published in [S2006@LMarshall].
+    |    |___Upstream Statement: Children with ADHD display altered slow EEG-activi... [CLICK TO SEE MORE]
+    |    |  |___Context
+    |    |    |___Entry: Altered:=??
+    |    |    |___Entry: Deficits:=??
+    |    |    |___Publication Reference: Published in \cite{prehn2011reduced}.
+    |    |___Main Argument: We showed that increasing slow oscillation power d... [CLICK TO SEE MORE]
+    |      |___Context
+    |        |___Entry: Alleviate:=??
+    |        |___Publication Reference: Published in Brain Stimul. 2014 Nov-Dec;7(6):793-9... [CLICK TO SEE MORE]
+    |        |___Statement: This statement (refPA) has not yet been proven. It... [CLICK TO SEE MORE]
+    |          |___Context
+    |            |___Experiment Description: 12 children with ADHD underwent a toDCS and a sham... [CLICK TO SEE MORE]
+    |              |___Context
+    |                |___Entry: 2D object-location task:=Computer card game 'Memory' created with E-Prime 2... [CLICK TO SEE MORE]
+    |                |___Entry: toDCS:=Transcranial oscillating direct current stimulatio... [CLICK TO SEE MORE]
+    |                |___Addressed Confounder: Differences between healthy children and children ... [CLICK TO SEE MORE]
+    |                |  |___Context
+    |                |    |___Experiment Description: To ensure that the home and laboratory conditions ... [CLICK TO SEE MORE]
+    |                |      |___Context
+    |                |        |___Entry: Level of encoding:=??
+    |                |        |___Entry: Learning criterion:=??
+    |                |        |___Entry: 60%:=??
+    |                |        |___Entry: Disturbing:=??
+    |                |___Confounder: Some unforseen thing could go wrong. But this is a... [CLICK TO SEE MORE]
+    |                |___Data: 1.Unstimulated children with ADHD displayed worse ... [CLICK TO SEE MORE]
+    |
+    |___Answer: No.
+    |  |___Context
+    |    |___Upstream Statement: SO tDCS applied to healthy elderly failed to show ... [CLICK TO SEE MORE]
+    |      |___Context
+    |        |___Publication Reference: Published in \cite{eggert2013no}.
+    |
+    |___Answer: The question doesn't make sense or is irrelevant.
+
+----------------------------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------------------------
+Created folder ./outputs/TranscranialslowoscillationcurrentstimulationimprovesleepdependentmemoryconsolidationinchildrenwithADHDOriginal
+Wrote 'tree-like visualisation' file:	 ./outputs/TranscranialslowoscillationcurrentstimulationimprovesleepdependentmemoryconsolidationinchildrenwithADHDOriginal/TranscranialslowoscillationcurrentstimulationimprovesleepdependentmemoryconsolidationinchildrenwithADHDOriginal-Forest.txt 
+Wrote 'tree-like visualisation' file:	 ./outputs/TranscranialslowoscillationcurrentstimulationimprovesleepdependentmemoryconsolidationinchildrenwithADHDOriginal/TranscranialslowoscillationcurrentstimulationimprovesleepdependentmemoryconsolidationinchildrenwithADHDOriginal-Forest-short.txt 
+Wrote markup file:			 ./outputs/TranscranialslowoscillationcurrentstimulationimprovesleepdependentmemoryconsolidationinchildrenwithADHDOriginal/TranscranialslowoscillationcurrentstimulationimprovesleepdependentmemoryconsolidationinchildrenwithADHDOriginal-MU.txt 
+Wrote markup file:			 ./outputs/TranscranialslowoscillationcurrentstimulationimprovesleepdependentmemoryconsolidationinchildrenwithADHDOriginal/TranscranialslowoscillationcurrentstimulationimprovesleepdependentmemoryconsolidationinchildrenwithADHDOriginal-MU-short.txt 
+Wrote Latex file:			 ./outputs/TranscranialslowoscillationcurrentstimulationimprovesleepdependentmemoryconsolidationinchildrenwithADHDOriginal/TranscranialslowoscillationcurrentstimulationimprovesleepdependentmemoryconsolidationinchildrenwithADHDOriginal-Latex.tex 
+----------------------------------------------------------------------------------------------
+All memory allocations freed (alloCount = 0).
