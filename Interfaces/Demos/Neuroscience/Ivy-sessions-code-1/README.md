@@ -3,7 +3,7 @@
 execute in terminal with command ` ./tiptop`  or ` ./tiptop <S|P|M>` followed by 0,1 or 2 markup file names containing each a description of an MMM unit. Default used are `Blip-is-blop-MU.txt` and `Blip-is-blop-MU2.txt`.
 
 
-![Image](/Ivy Sessions Code 1.png)
+![Image](/ Ivy Sessions Code 1.png)
 
 
 In **mmm.c**:
