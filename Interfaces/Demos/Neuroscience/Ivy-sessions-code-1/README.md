@@ -51,5 +51,5 @@ If choice = `R` then `registerStudy()` (from **interface.c**).
 
 ---
 
-If choice = `S` again or `P then ...
+If choice = `S` again or `P` then `registerStudy()` _etc_.
 
