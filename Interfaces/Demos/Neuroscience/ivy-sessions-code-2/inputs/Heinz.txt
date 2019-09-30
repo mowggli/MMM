@@ -1,0 +1,86 @@
+QUESTION What is the electric quadrupole moment (QM) of the nucleus cadmium 111?
+
+QM := nucleus property. a constant. ow round or how dermed is the nucleus.
+
+Camium 111:= important nucleus (IRM most used)
+
+Reason to ask:
+Nucleus used* in many fields of experiment (eg biology, solid state physics, surface...). 
+In experiment you get numbers, eg : "in this molecule, yo get this value __." What do these numbers tell you?
+To interprete correctly what you see, the information from experiment, you need to know the QM.
+
+*used" :=  as a probe/spy eg enzyme. Nuclei allow to look into structure (electronic or geometric) of environment 
+(cf IRM: protons in body act as spies that allow technique)
+
+
+Experiment:= measure frequency. 	f = QM X outside nb  							~~> need to know QM to know this nb
+
+											f = QM X electric feild gradient (EFG)
+
+EFG:= used test solid state biophysics.
+
+
+eg IRM protons act as little magnets (magnetic moment)
+if proton in water apply magnetic field
+measure frequency 
+											f = value of nuclear moment  X magnetic field (MF)
+
+If MF is unknown determine it by seeing protons flipping.
+MF can be applied externally or put protons in magnetic ... then protons act as probes.
+
+
+-----------------
+
+Heinz rather measres oscillation in time
+
+	frequency (measured)
+
+Found that EFG is influenced by chemical bonding.
+
+
+1. 45 years ago, 1st time Heinz published value of QM. "QM of Zinc and Cadmium nuclei"
+
+did not understand the theory of solids
+
+
+20 years ago new mathematical technique in theory of matter to approximate stuff, namely "Density Functional Theory" (DFT). Approximates electronic structure of stuff. For more than 3 bodies, an approximation is necessary.
+DFT very successful, used in 10s of 1000s of publications.
+
+eg ifbefore chemical industry outputs new product they have to calculate property with DFT.
+
+
+2. 10 years ago, Heinz applied DFT to QUESTION for full solid.
+
+"QM of Zinc and Cadmium nuclei. An update."
+
+3. 3 years ago
+
+"QM of Zinc and Cadmium nuclei. An appology."
+
+uses other way of calculation, hybrid. + indpt data compatible with this 2nd calculation
+
+
+How to calculate EFG better?
+
+How:= in which materials
+
+
+6 years ag0: quantum chemistry technique. In simple molecules. 
+QC=the maths of solving the quantum behaviour. ANother approx to solve the multipartical behaviour restricted to small systems.
+
+done by colleague in danemark calculat for single molecule.
+then need to make assumption on influence between different molecules, turns out to be not big. -> use DFT and magic to rectify (actually small 4%correction needed only)
+
+
+45 years ago H realised we canmeasure for individual molecules. Conditions: in gaz. Have molecules fly long enough without interacting with another molecule.
+
+Nuclear techniques to measure just a few (millions) of molecules. non standard techniques (like magnetic resonance IRM which does it for much more molecules). Nuclear techniques used since 45 years but only in solids. idea in gaz.
+PhD student. in 70's Let's try to measure free molecules. Gave up. "Perturb angular correlation"
+
+
+New motivation: qantum chemistry technique.
+
+4. 
+Since 2 years. publication last year
+
+measure 
