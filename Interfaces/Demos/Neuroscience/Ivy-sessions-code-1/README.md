@@ -2,7 +2,9 @@
 
 execute in terminal with command ` ./tiptop`  or ` ./tiptop <S|P|M>` followed by 0,1 or 2 markup file names containing each a description of an MMM unit. Default used are `Blip-is-blop-MU.txt` and `Blip-is-blop-MU2.txt`.
 
----
+
+![Image](https://www.lucidchart.com/invitations/accept/faf6247f-b0d5-4e8d-9414-5b8423f6ecb3)
+
 
 In **mmm.c**:
 
