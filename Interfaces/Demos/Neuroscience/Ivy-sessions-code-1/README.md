@@ -1,1 +1,1 @@
-# Ivy sessions initial code 
+# Ivy sessions initial code Oct 2018
