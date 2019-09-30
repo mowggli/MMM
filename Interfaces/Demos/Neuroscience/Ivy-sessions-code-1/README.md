@@ -27,7 +27,7 @@ In **mmm.c**:
 
 ----
 
-## III. If choice = `S` ...
+## III. If choice = `P` ...
 ...then `neuroscience_mmm` (from **interface.c**)
 
 ```
@@ -51,5 +51,5 @@ If choice = `R` then `registerStudy()` (from **interface.c**).
 
 ---
 
-If choice = `S` again or `P` then `registerStudy()` _etc_.
+If choice = `S` or `P` then `registerStudy()` _etc_.
 
