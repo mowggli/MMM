@@ -1,0 +1,104 @@
+<Statement>
+   <text>Is it true that 'Sleep slow oscillations have a causal role in memory consolidation in human. '?</text>
+   <tag>Question</tag>
+   <Context>
+      <Entry>
+         <term>slow oscillation</term>
+         <definition>synchronized EEG activity with frequency range of 0.5-2Hz</definition>
+      </Entry>
+      <Entry>
+         <term>memory consolidation </term>
+         <definition>a category of processes that stabilize a memory trace after its initial acquisition</definition>
+      </Entry>
+      <Entry>
+         <term>Causal</term>
+         <definition>?</definition>
+      </Entry>
+   </Context>
+   <Answers>
+   <Statement>
+      <text>Yes.</text>
+      <tag>Answer</tag>
+      <Context>
+         <Statement>
+            <text>Sleep contributes to the long-term consolidation of new memories.</text>
+            <tag>UPSTREAM</tag>
+            <Context>
+               <Statement>
+                  <text>Published in:Sleep-dependent memory consolidation. Nature, 2005</text>
+                  <tag>BIB</tag>
+               </Statement>
+            </Context>
+         </Statement>
+         <Statement>
+            <text>This function of sleep has been linked to slow (less than 1 Hz) potential oscillations.</text>
+            <tag>UPSTREAM</tag>
+            <Context>
+               <Statement>
+                  <text>Published in: Local sleep and learning. Nature,2004</text>
+                  <tag>BIB</tag>
+               </Statement>
+            </Context>
+         </Statement>
+          <Statement>
+            <text>We show that inducing slow oscillation-like potential fields by transcranial application of oscillating potentials of 0.75 Hz during early nocturnal non-rapid-eye-movement sleep enhances the retention of hippocampus-dependent declarative memories in healthy humans. The experiment was carried out by Marshall et al. </text>
+            <tag>MAIN</tag>
+            <Context>
+               <Statement>
+                  <text>Published in: Boosting slow oscillations during sleep potentiates memory. Nature,2006.</text>
+                  <tag>BIB</tag>
+               </Statement>
+               <Statement>
+                  <text>This statement (refPA) has been proven. </text>
+                  <tag>ACTU</tag>
+                  <Context>
+               <Statement>
+                  <text>We induced slow oscillations transcranial application of oscillating potentials during early nocturnal non-rapid-eye-movement (non-REM) sleep after a learning period. We assessed the hippocampal-depedent declarative memory by a paired-associate word memory task  and a nonverbal paired-associate memory task;  we assessed the non-declarative procedural memory by a finger-sequence tapping task and mirror-tracing task.</text>
+                  <tag>EXPMT</tag>
+                  <Context>
+                     <Entry>
+                        <term>non-rapid-eye-movement sleep</term>
+                        <definition>a collective term for sleep stages 1-3 where little or no eye movement occur during the stages</definition>
+                     </Entry>
+                     <Entry>
+                        <term>paired-associate word memory task</term>
+                        <definition>consisting of a list of 46 word pairs to be learned before sleep until a criterion of 60 per cent correct responses in a test of immediate cued recall is achieved. At retrieval testing in the morning after sleep, cue words were again displayed and the subjects were required to recall the appropriate response word</definition>
+                     </Entry>
+                     <Entry>
+                        <term>nonverbal paired-associate memory task</term>
+                        <definition>consists of a list of 16 evenly balanced pairs of either geometric or non-geometric line-drawings to be recognized until a minimum of 10 correct responses in a test of cued recognition is achieved. . At retrieval testing the cued recognition task was repeated using a newly randomized order of presentation</definition>
+                     </Entry>
+                     <Entry>
+                        <term>finger-sequence tapping task</term>
+                        <definition>requires subjects to repeatedly finger-tap with the non-dominant left hand a five-element sequence as fast and accurately as possible on a keyboard for twelve 30-s periods at learning before sleep, and for three 30-s periods at post-sleep retesting</definition>
+                     </Entry>
+                     <Entry>
+                        <term>mirror-tracing task</term>
+                        <definition>requires subjects to trace as fast and as accurately as possible line-drawn meaningless figures while these figures and their hand movements were visible only through a mirror.The act of drawing is a learned skill that requires visual and proprioceptive feedback to control muscle movement. At retrieval testing, the total time to trace a figure, the number of errors and the error time were measured, and averaged across runs.</definition>
+                     </Entry>
+                     <Statement>
+                        <text>Some unforseen thing could go wrong. But this is assumed not to happen.</text>
+                        <tag>T2-CNFDR</tag>
+                     </Statement>
+                     <Statement>
+                        <text>Some data.</text>
+                        <tag>DATA</tag>
+                     </Statement>
+                  </Context>
+               </Statement>
+                  </Context>
+               </Statement>
+            </Context>
+         </Statement>
+      </Context>
+   </Statement>
+   <Statement>
+      <text>No.</text>
+      <tag>Answer</tag>
+   </Statement>
+   <Statement>
+      <text>The question doesn't make sense or is irrelevant.</text>
+      <tag>Answer</tag>
+   </Statement>
+   </Answers>
+</Statement>

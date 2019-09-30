@@ -1,0 +1,132 @@
+<Statement>
+   <text>Is it true that 'Transcranial slow oscillation current stimulation improve sleep-dependent memory consolidation in children with ADHD. '?</text>
+   <tag>Question</tag>
+   <Context>
+      <Entry>
+         <term>slow oscillation</term>
+         <definition>synchronized EEG activity with frequency range of 0.5-2Hz</definition>
+      </Entry>
+      <Entry>
+         <term>memory consolidation </term>
+         <definition>a category of processes that stabilize a memory trace after its initial acquisition</definition>
+      </Entry>
+      <Entry>
+         <term>ADHD </term>
+         <definition>Attention deficit hyperactivity disorder</definition>
+      </Entry>
+   </Context>
+   <Answers>
+   <Statement>
+      <text>Yes.</text>
+      <tag>Answer</tag>
+      <Context>
+         <Statement>
+            <text>Memory benefits particularly from slow wave sleep (SWS) which is characterized electrophysiologically by slow oscillations occurring during slow wave activity of 0.5 to 5Hz.</text>
+            <tag>UPSTREAM</tag>
+            <Context>
+               <Statement>
+                  <text>No publication referenced.</text>
+                  <tag>NO BIB</tag>
+               </Statement>
+            </Context>
+         </Statement>
+         <Statement>
+            <text>Transcranial oscillating direct current stimulation at 0.75 Hz during SWS in young healthy adults increased SO power, resulting in boosted sleep-depednet consolidation of declarative memory.</text>
+            <tag>UPSTREAM</tag>
+            <Context>
+               <Statement>
+                  <text>Published in S2006@LMarshall.</text>
+                  <tag>BIB</tag>
+               </Statement>
+            </Context>
+         </Statement>
+         <Statement>
+            <text>Children with ADHD display altered slow EEG-activity during slow wave sleep and show deficits in the sleep associated consolidation of declarative memory.</text>
+            <tag>UPSTREAM</tag>
+            <Context>
+               <Statement>
+               <text>Published in: Reduced sleep-associated consolidation of declarative memory in attention-deficit/hyperactivity disorder.Sleep medicine, 2011.</text>
+                  <tag>BIB</tag>
+               </Statement>
+            </Context>
+          </Statement>
+          <Statement>
+            <text>We showed that increasing slow oscillation power during sleep by toDCS can alleviate declarative memory deficits in children with ADHD. The experiment was carried out by Prehn-Kristensen et al. </text>
+            <tag>MAIN</tag>
+            <Context>
+               <Statement>
+                  <text>Published in: Transcranial  oscillatory  direct  current  stimulation  during  sleep  improves  declarative  memory  consolidation  in children with attention-deficit/hyperactivity disorder to a level comparable to healthy controls. Brain stimulation,2014.</text>
+                  <tag>BIB</tag>
+               </Statement>
+               <Statement>
+                  <text>This statement (refPA) has been proven. </text>
+                  <tag>ACTU</tag>
+                  <Context>
+               <Statement>
+                  <text>12 children with ADHD underwent a toDCS and a sham condition in a double-blind crossover study design conducted in a sleep laboratory. Memory was tested using a 2D object-location task. In addition, 12 healthy children performed the same memory task in their home environment, with no stimulation.</text>
+                  <tag>EXPMT</tag>
+                  <Context>
+                     <Entry>
+                        <term>2D object-location task</term>
+                        <definition>Computer card game, Memory, created with E-Prime 2.1 by Psychology Software Tools</definition>
+                     </Entry>
+                     <Entry>
+                        <term>toDCS</term>
+                        <definition>Transcranial oscillating direct current stimulation, following protocol of S2006@Marshall </definition>
+                     </Entry>
+                     <Statement>
+                        <text>Differences between healthy children and children with ADHD in memory performance might have been underestimated as the controls performed the tasks and slept at home, not comparable to the settings for children with ADHD. But this issue has been addressed.</text>
+                        <tag>T1-CNFDR</tag>
+                        <Context>
+                           <Statement>
+                              <text>To ensure that the home and laboratory conditions were comparable, parents of control children were instructed to provide a quiet room and to take care that no disturbing events happened during the sessions. Moreover, by introducing a learning criterion (60 per cent), we made sure that patients and healthy children ended the encoding session on a comparable level of encoding.</text>
+                              <tag>EXPMT</tag>
+                           </Statement>
+                        </Context>
+                     </Statement>
+                     <Statement>
+                        <text>Some unforseen thing could go wrong. But this is assumed not to happen.</text>
+                        <tag>T2-CNFDR</tag>
+                     </Statement>
+                     <Statement>
+                        <text>Some data.</text>
+                        <tag>DATA</tag>
+                     </Statement>
+                  </Context>
+               </Statement>
+                  </Context>
+               </Statement>
+            </Context>
+         </Statement>
+      </Context>
+   </Statement>
+   <Statement>
+      <text>No.</text>
+      <tag>Answer</tag>
+      <Context>
+         <Statement>
+            <text>SO tDCS applied to healthy elderly failed to show an effect on memory consolidation.</text>
+            <tag>UPSTREAM</tag>
+            <Context>
+               <Entry>
+                  <term>SO</term>
+                  <definition>slow oscillation</definition>
+               </Entry>
+               <Entry>
+                  <term>tDSC</term>
+                  <definition>transcranial direct current stimulation,a form of neurostimulation that uses constant, low direct current delivered via electrodes on the head</definition>
+               </Entry>
+               <Statement>
+                  <text>Published in Eggert et al. Brain stimulation, 2013.</text>
+                  <tag>BIB</tag>
+               </Statement>
+            </Context>
+         </Statement>
+       </Context>
+   </Statement>
+   <Statement>
+      <text>The question doesn't make sense or is irrelevant.</text>
+      <tag>Answer</tag>
+   </Statement>
+   </Answers>
+</Statement>
