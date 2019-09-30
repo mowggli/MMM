@@ -1,27 +1,15 @@
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-	<xs:attribute name="id" type="xs:positiveInteger" />
-	<xs:attribute name="parentid" type="xs:positiveInteger" />
-	<xs:attribute name="start_id" type="xs:positiveInteger" />
-	<xs:attribute name="end_id" type="xs:positiveInteger" />
-	<xs:attribute name="timestamp" type="xs:date" />
-  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-  <!-- xxx                        ROLE                               xxx -->
-  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-	<xs:attribute name="role"> <!-- question/answer/example/statement/poperty... -->
-    <xs:simpleType>
-       <xs:restriction base="xs:string">
-       </xs:restriction>
-    </xs:simpleType>
-	</xs:attribute>
+<!-- xsddiagram -o MMMML.png -r unit -e 4 -z 200 ./MMMcopyBIS.xsd -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" > <!--targetNamespace="mmm"-->
+	<xs:attribute name="id" type="xs:integer" use="required"/>
+	<xs:attribute name="parentid" type="xs:integer" use="required"/>
+	<xs:attribute name="role" type="xs:string"/>
+	<xs:attribute name="link_role" type="xs:string"  default="translation"  use="required"/>
 
-<!--<xs:attribute name="role" type="string"/>-->
+	<xs:attribute name="start_id" type="xs:integer" use="required"/>
+	<xs:attribute name="end_id" type="xs:integer" use="required"/>
+	<xs:attribute name="timestamp" type="xs:date" use="required"/>
+	<xs:attribute name="count" type="xs:integer" use="required"/>
 
-	<xs:attribute name="link_role"> <!-- generalisation/instantiation/translation... -->
-    <xs:simpleType>
-       <xs:restriction base="xs:string">
-       </xs:restriction>
-    </xs:simpleType>
-	</xs:attribute>
   <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
   <!-- xxx                        PERSON                             xxx -->
   <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
@@ -60,6 +48,7 @@
   <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
   <!-- xxx                    LEXIC ENTRY                            xxx -->
   <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- todo: make entry a link -->
 	<xs:complexType name="entry_type">
 		<xs:sequence>
 			<xs:element name="term" type="xs:string"/> 
@@ -79,108 +68,109 @@
   <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
   <!-- xxx                   DETAILS                                 xxx -->
   <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
  	<xs:complexType name="details_type">
 		   	<xs:sequence>
 					<xs:element name="unit" type="unit_type" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:sequence>
 				<xs:attribute ref="role" use="required" /> <!-- answers/context/details...-->
+				<xs:attribute ref="count" use="required" />
 	</xs:complexType>
-  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-  <!-- xxx               META CONTENT                                xxx -->
-  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-		<xs:complexType name="meta_content_type">
-			<xs:sequence>	
-      		<xs:element name="authors" type="authors_type"/>
-		      <xs:element name="lexic" type="lexic_type" minOccurs ="0" maxOccurs="1"/>
-    		</xs:sequence>
-    		<xs:attribute ref="id" use="required" />
-			<xs:attribute ref="role" use="required" />
-			<xs:attribute ref="link_role"/>
-			<xs:anyAttribute/>
-  		</xs:complexType>
-  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-  <!-- xxx                   OTHER UNIT                              xxx -->
-  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-	<xs:complexType name="other_unit_type">
-	  <xs:complexContent>
-	    <xs:extension base="meta_content_type">
-	      <xs:sequence>
-			  <xs:element name="main_content" type="xs:anyType" minOccurs ="1" maxOccurs="1"/>
-	        <xs:element name="details" type="details_type" minOccurs ="1" maxOccurs="1"/>
-	      </xs:sequence>
-			<xs:attribute ref="role" use="required"/>
-	 		<xs:attribute ref="parentid" use="required" />
-	    </xs:extension>
-	  </xs:complexContent>
-	</xs:complexType>
-  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-  <!-- xxx               LINK                                        xxx -->
-  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-	<xs:complexType name="link_type">
-		<xs:complexContent>
-		    <xs:extension base="meta_content_type">
-				<xs:sequence>	
-			  		<xs:element name="main_content" type="xs:anyType" minOccurs ="1" maxOccurs="1"/>
-	        		<xs:element name="details" type="details_type" minOccurs ="1" maxOccurs="1"/>
-				</xs:sequence>
-				 <xs:attribute name="role" type="string" fixed="link" use="required"/>
-             <xs:attribute name="link_role" type="xs:string" default="translation" use="required"/>
-				<xs:attribute ref="start_id" use="required" />
-	 			<xs:attribute ref="end_id" use="required" />
-		    </xs:extension>
-	  </xs:complexContent>
-	</xs:complexType>
- <!-- a link has authors, details, sorts/role (generalisation/instantiation/translation...), a start an end-->
 
+	<xs:element name="details" type="details_type"/>
   <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+  <!-- xxx                         UNIT                              xxx -->
+  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+		<xs:complexType name="unit_type">
+		</xs:complexType>
+
+<xs:element name="unit" type="unit_type"  abstract="true"/>
+  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+  <!-- xxx               PLOUC                                       xxx -->
+  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+ <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
   <!-- xxx               QUESTION                                    xxx -->
   <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
-	<xs:complexType name="question_type">
-		<xs:complexContent>
-		    <xs:extension base="meta_content_type">
-				<xs:sequence>	
-					<xs:element name="main_content" type="xs:string" minOccurs ="1" maxOccurs="1" default="Is the sky blue?"/>
-					<xs:element name="answers" type="details_type" minOccurs ="1" maxOccurs="1"/>
-				</xs:sequence>
-				<xs:attribute name="role" type="string" fixed="question" use="required"/>
-	 			<xs:attribute ref="parentid" use="required" />
-		    </xs:extension>
-	  </xs:complexContent>
-	</xs:complexType>
+	<xs:element name="question" substitutionGroup="unit">
+		<xs:complexType>
+					<xs:sequence>   	
+						<xs:element name="main_content" type="xs:string" minOccurs ="1" maxOccurs="1" default="Is the sky blue?"/>   
+						<xs:element name="authors" type="authors_type"/>
+						<xs:element name="lexic" type="lexic_type" minOccurs ="0" maxOccurs="1"/>
+  						<xs:element name="context" type="details_type" minOccurs ="1" maxOccurs="1"/>
+						<xs:element name="answers" type="details_type" minOccurs ="1" maxOccurs="1"/>
+					</xs:sequence>
+				<xs:attribute ref="id" use="required"/>
+				<xs:attribute name ="role" default="blop" type="xs:string" fixed="question" use="required"/> <!-- attention: n instancie pas celui de subgroup-->
+				<xs:attribute ref="parentid"/>		
+
+		</xs:complexType>
+	</xs:element>
 
   <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
   <!-- xxx               STATEMENT                                   xxx -->
   <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-	<xs:complexType name="statement_type">
-		<xs:complexContent>
-		    <xs:extension base="meta_content_type">
-				<xs:sequence>	
-					<xs:element name="main_content" type="xs:string" minOccurs ="1" maxOccurs="1" default="Birds are funny."/>
-					<xs:element name="conditions" type="details_type" minOccurs ="1" maxOccurs="1"/>
-				</xs:sequence>
-				<xs:attribute name="role" type="string" fixed="statement" use="required"/>
-	 			<xs:attribute ref="parentid" use="required" />
-		    </xs:extension>
-	  </xs:complexContent>
-	</xs:complexType>
+
+	<xs:element name="statement" substitutionGroup="unit">
+		<xs:complexType>
+					<xs:sequence>   	
+						<xs:element name="main_content" type="xs:string" minOccurs ="1" maxOccurs="1" default="Birds are funny."/>   
+						<xs:element name="authors" type="authors_type"/>
+						<xs:element name="lexic" type="lexic_type" minOccurs ="0" maxOccurs="1"/>
+  						<xs:element name="context" type="details_type" minOccurs ="1" maxOccurs="1"/>
+						<xs:element name="conditions" type="details_type" minOccurs ="1" maxOccurs="1"/>
+					</xs:sequence>
+			<xs:attribute ref="id" use="required"/>
+			<xs:attribute ref="parentid"/>		
+			<xs:attribute name="role" default="blop" fixed="statement"/> <!-- attention: n instancie pas celui de subgroup-->
+		</xs:complexType>
+	</xs:element>
+
+ <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+  <!-- xxx               LINK                                        xxx -->
+  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<xs:element name="link" substitutionGroup="unit">
+		<xs:complexType>
+					<xs:sequence>   	
+						<xs:element name="main_content" type="xs:anyType" minOccurs ="1" maxOccurs="1"/> 
+						<xs:element name="authors" type="authors_type"/>
+						<xs:element name="lexic" type="lexic_type" minOccurs ="0" maxOccurs="1"/>
+  						<xs:element name="details" type="details_type" minOccurs ="1" maxOccurs="1"/>
+					</xs:sequence>
+			<xs:attribute ref="id" use="required"/>
+			<xs:attribute ref="start_id"/>
+	 		<xs:attribute ref="end_id" />
+			<xs:attribute name="role" default="blop" fixed="link"/> <!-- attention: n instancie pas celui de subgroup-->
+			<xs:attribute ref="link_role"/>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- a link has authors, details, sorts/role (generalisation/instantiation/translation...), a start an end-->
 
   <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-  <!-- xxx                         UNIT                              xxx -->
+  <!-- xxx                     OTHER UNIT                            xxx -->
   <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-  <xs:complexType name="unit_type">
-    <xs:choice>
-     <xs:element name="question" type="question_type"/>
-      <xs:element name="other_unit" type="other_unit_type"/>
-		<xs:element name="statement" type="statement_type"/>
-		<xs:element name="link" type="link_type"/>
-    </xs:choice>
-  </xs:complexType>
+	<xs:element name="other" substitutionGroup="unit">
+		<xs:complexType>
+					<xs:sequence>   	
+						<xs:element name="main_content" type="xs:anyType" minOccurs ="1" maxOccurs="1"/>
+						<xs:element name="authors" type="authors_type"/>
+						<xs:element name="lexic" type="lexic_type" minOccurs ="0" maxOccurs="1"/>
+  						<xs:element name="details" type="details_type" minOccurs ="1" maxOccurs="1"/>
+					</xs:sequence>
+			<xs:attribute ref="id" use="required"/>
+			<xs:attribute ref="parentid"/>	
+			<xs:attribute name="role" default="blop" fixed="other"/> <!-- attention: n instancie pas celui de subgroup-->
+		</xs:complexType>
+	</xs:element>
 
   <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-  <!-- xxx               ROOT UNIT ELEMENT                           xxx -->
+  <!-- xxx                   PACKAGE UNIT                            xxx -->
   <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
-	<xs:element name="unit" type="unit_type"/>
+
 </xs:schema>
 
