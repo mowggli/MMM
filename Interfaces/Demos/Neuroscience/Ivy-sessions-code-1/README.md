@@ -1,6 +1,6 @@
 # Ivy sessions initial code Oct 2018
 
-execute in terminal with command ` ./tiptop`  or ` ./tiptop <S|P|M>` followed by 0,1 or 2 markup file names cotaining each a description of an MMM unit. Default used are `Blip-is-blop-MU.txt` and `Blip-is-blop-MU2.txt`.
+execute in terminal with command ` ./tiptop`  or ` ./tiptop <S|P|M>` followed by 0,1 or 2 markup file names containing each a description of an MMM unit. Default used are `Blip-is-blop-MU.txt` and `Blip-is-blop-MU2.txt`.
 
 ---
 
@@ -17,11 +17,11 @@ execute in terminal with command ` ./tiptop`  or ` ./tiptop <S|P|M>` followed by
 
 ---
 
-If choice = `S` then `readQUESTION` then `fprintForestQUESTION` (from **forest.c**) a MMM question unit on screen then possibility to `createFiles` (from **addendum.c**)
+If choice = `S` then `readQUESTION` then `fprintForestQUESTION` (from **forest.c**) a MMM question unit on screen then possibility to `createFiles` (from **addendum.c**).
 
 ----
 
-If choice = `M` then same as previous case with two MMM question units + `mergeQuestions` (from **interface.c**)
+If choice = `M` then same as previous case, but this time with two MMM question units and in the middle a call to `mergeQuestions` (from **interface.c**).
 
 ----
 
