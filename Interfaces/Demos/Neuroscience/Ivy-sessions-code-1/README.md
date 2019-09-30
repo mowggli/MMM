@@ -34,6 +34,12 @@ If choice = `S` then `neuroscience_mmm` (from **interface.c**)
 	    ...    finished --> type 'F'
 ```
 If choice = `P` then ...
+
+---
+
 If choice = `F` then ...
+
+---
+
 If choice = `S` again then ...
 
