@@ -1,3 +1,3 @@
 # MMM INTERFACE FOR NEUROSCIENTISTS
 
-cf branch `ivy-seesions-1` and `ivy-seesions-2`
+cf branch `ivy-sessions-1` and `ivy-sessions-2`
