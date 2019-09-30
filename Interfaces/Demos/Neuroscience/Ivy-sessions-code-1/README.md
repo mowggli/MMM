@@ -4,15 +4,15 @@ execute in terminal with command ` ./tiptop`  or ` ./tiptop <S|P|M>` followed by
 
 ---
 
-**mmm.c**
+In **mmm.c**:
 
 *Choice function*
 
 ```
-	(0) Please choose and type:
-	    'S' if you want to create some files based on a dummy predefined question unit (described in Blip-is-blop-MU.txt).
-	    'P' if you want to play the part of a neuroscientist registering a new question unit.
-	    'M' if you want to two pre-registered studies.
+(0) Please choose and type:
+    'S' if you want to create some files based on a dummy predefined question unit (described in Blip-is-blop-MU.txt).
+    'P' if you want to play the part of a neuroscientist registering a new question unit.
+    'M' if you want to two pre-registered studies.
 ```
 
 ---
