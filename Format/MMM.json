@@ -1,0 +1,303 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MMM schema",
+  "description": "This schema accepts MMM items",
+  "default": "question",
+  "definition": {
+    "person": {
+      "type": "object",
+      "required": [
+        "firstName",
+        "lastName"
+      ],
+      "properties": {
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "birthDate": {
+          "type": "date"
+        },
+        "deathDate": {
+          "type": "date"
+        },
+        "gender": {
+          "type": "string"
+        },
+        "nationality": {
+          "type": "string"
+        },
+        "nickName": {
+          "type": "string"
+        }
+      }
+    },
+    "person_list": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/person"
+      }
+    },
+    "authors": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "timestamp": {
+          "type": "date"
+        },
+        "team": {
+          "$ref": "#/definitions/person_list"
+        }
+      }
+    },
+    "nodeMetaContent": {
+      "type": "object",
+      "required": [
+        "id",
+        "role"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "number"
+        },
+        "role": {
+          "type": "string"
+        },
+        "authors": {
+          "$ref": "#/definitions/authors"
+        }
+      }
+    },
+    "linkMetaContent": {
+      "type": "object",
+      "required": [
+        "id",
+        "role"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "authors": {
+          "$ref": "#/definitions/authors"
+        },
+        "id": {
+          "type": "number"
+        },
+        "startId": {
+          "type": "number"
+        },
+        "endId": {
+          "type": "number"
+        },
+        "role": {
+          "type": "string"
+        }
+      }
+    },
+    "term": {
+      "type": "object",
+      "required": [
+        "main_content",
+        "meta_content"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "main_content": {
+          "type": "string"
+        },
+        "meta_content": {
+          "$ref": "#/definitions/nodeMetaContent"
+        }
+      }
+    },
+    "property": {
+      "type": "object",
+      "required": [
+        "main_content",
+        "meta_content"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "main_content": {
+          "type": "string"
+        },
+        "meta_content": {
+          "$ref": "#/definitions/nodeMetaContent"
+        }
+      }
+    },
+    "item": {
+      "type": [
+        "link",
+        "node",
+        "term",
+        "property",
+        "question",
+        "statement",
+        "entry"
+      ]
+    },
+    "itemm": {
+      "oneOf": [
+        {
+          "$ref": "#/definitions/link"
+        },
+        {
+          "$ref": "#/definitions/node"
+        },
+        {
+          "$ref": "#/definitions/term"
+        },
+        {
+          "$ref": "#/definitions/property"
+        },
+        {
+          "$ref": "#/definitions/question"
+        },
+        {
+          "$ref": "#/definitions/statement"
+        },
+        {
+          "$ref": "#/definitions/entry"
+        }
+      ]
+    },
+    "item_list": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/item"
+      }
+    },
+    "node": {
+      "type": "object",
+      "required": [
+        "main_content",
+        "meta_content",
+        "details"
+      ],
+      "properties": {
+        "main_content": {},
+        "meta_content": {
+          "$ref": "#/definitions/nodeMetaContent"
+        },
+        "lexic": {
+          "$ref": "#/definitions/entry_list"
+        },
+        "details": {
+          "$ref": "#/definitions/item_list"
+        }
+      }
+    },
+    "question": {
+      "type": "object",
+      "required": [
+        "main_content",
+        "meta_content"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "main_content": {
+          "type": "string"
+        },
+        "meta_content": {
+          "$ref": "#/definitions/nodeMetaContent"
+        },
+        "lexic": {
+          "$ref": "#/definitions/entry_list"
+        },
+        "context": {
+          "$ref": "#/definitions/item_list"
+        },
+        "answers": {
+          "$ref": "#/definitions/item_list"
+        }
+      }
+    },
+    "statement": {
+      "type": "object",
+      "required": [
+        "main_content",
+        "meta_content",
+        "details"
+      ],
+      "properties": {
+        "main_content": {
+          "type": "string"
+        },
+        "meta_content": {
+          "$ref": "#/definitions/nodeMetaContent"
+        },
+        "lexic": {
+          "$ref": "#/definitions/entry_list"
+        },
+        "context": {
+          "$ref": "#/definitions/item_list"
+        },
+        "conditions": {
+          "$ref": "#/definitions/item_list"
+        }
+      }
+    },
+    "link": {
+      "type": "object",
+      "required": [
+        "main_content",
+        "meta_content",
+        "details"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "main_content": {},
+        "meta_content": {
+          "$ref": "#/definitions/linkMetaContent"
+        },
+        "lexic": {
+          "$ref": "#/definitions/entry_list"
+        },
+        "details": {
+          "$ref": "#/definitions/item_list"
+        }
+      }
+    },
+    "entry": {
+      "type": "object",
+      "required": [
+        "meta_content",
+        "term",
+        "definition"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "main_content": {
+          "type": "string"
+        },
+        "meta_content": {
+          "$ref": "#/definitions/linkMetaContent"
+        },
+        "term": {
+          "$ref": "#/definitions/item"
+        },
+        "definition": {
+          "$ref": "#/definitions/item"
+        }
+      }
+    },
+    "entry_list": {
+      "type": "array",
+      "items": {
+        "$ref": "#/mainDefinitions/entry"
+      }
+    }
+  },
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "item": {
+      "$ref": "#/definitions/itemm"
+    }
+  }
+}
